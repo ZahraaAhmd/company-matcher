@@ -1,0 +1,93 @@
+body {
+    background: $bg;
+    color: $black;
+    font-family: "forma-djr-micro", sans-serif;
+    font-family: "forma-djr-micro";
+}
+
+.container {
+    width: 100%;
+    max-width: 100%;
+    padding: 0 9vw;
+    &.small-container {
+        padding: 0 14vw;
+    }
+    @media(min-width:1230px) {
+        &.small {
+            padding: 0 15px;
+            max-width: 1200px;
+        }
+    }
+}
+
+h1 {
+    font-size: 60px;
+    line-height: 70px;
+    font-weight: bold;
+}
+
+p {
+    color: $gray;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+.title {
+    font-size: 40px;
+    line-height: 50px;
+    position: relative;
+    margin-bottom: 20px;
+    font-weight: 500;
+    .pattern-bg {
+        position: relative;
+        &::before {
+            content: "";
+            display: block;
+            position: absolute;
+            width: 27px;
+            height: 46px;
+            left: -23px;
+            top: -21px;
+            background: url("../images/icons/Squares.svg");
+            background-size: 100%;
+        }
+    }
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 54px;
+    font-weight: 500;
+}
+
+.yellow-text {
+    color: $yellow;
+}
+
+.btn-warning {
+    background-color: $yellow;
+    border-color: $yellow;
+    color: $btn-txt;
+    padding: 10px 28px 8px 28px;
+    transition: all ease 250ms;
+    font-weight: 500;
+    &:hover {
+        background-color: $black;
+        border-color: $black;
+        color: #fff
+    }
+}
+
+.head-box {
+    max-width: 690px;
+    margin: 0 auto;
+}
+
+.no-bg {
+    background: none !important
+}
+
+.yellow-bg {
+    background: $yellow !important;
+}

@@ -1,0 +1,64 @@
+/*** start footer style ***/
+
+footer {
+    background: $black;
+    .container {
+        .row {
+            padding: 80px 15px 40px 15px;
+            background: url("../images/icons/Pattern.svg") no-repeat;
+            background-position: top 110px right;
+        }
+        .site-logo {
+            margin-bottom: 60px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 22px;
+            font-weight: 300;
+            color: #fff;
+            @media(min-width: 992px) {
+                width: 100%;
+                max-width: 305px;
+            }
+        }
+        h3 {
+            font-size: 22px;
+            line-height: 28px;
+            margin-bottom: 32px;
+        }
+        ul {
+            padding: 0;
+            li {
+                font-size: 16px;
+                line-height: 26px;
+                color: #F0F0F0;
+                font-weight: 300;
+                list-style-type: none;
+                list-style: none;
+                margin-bottom: 18px;
+                img {
+                    margin-right: 10px;
+                }
+                a {
+                    font-size: 16px;
+                    line-height: 26px;
+                    color: #F0F0F0;
+                    font-weight: 300;
+                    text-decoration: none !important;
+                    transition: color 250ms ease;
+                    &:hover {
+                        color: $yellow;
+                    }
+                }
+            }
+        }
+        .social-icons {
+            @media(min-width: 992px) {
+                text-align: right;
+            }
+            a {
+                padding: 0 15px;
+            }
+        }
+    }
+}

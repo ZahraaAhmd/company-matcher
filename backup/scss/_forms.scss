@@ -1,0 +1,274 @@
+/*** start events style ***/
+
+.custom-control-inline {
+    .custom-control-label {
+        font-size: 15px;
+        padding-top: 2px;
+        padding-left: 10px;
+        &::before {
+            /* top: .25rem;
+            left: -1.5rem;
+            display: block;
+            width: 20px;
+            height: 20px;
+            pointer-events: none;
+            content: "";*/
+            background-color: transparent;
+            border-color: $gray;
+        }
+        /* &::after {
+            top: 9px;
+            left: -19px;
+        }*/
+    }
+}
+
+.custom-control-input:checked~.custom-control-label::before {
+    background-color: transparent;
+    border-color: #DFDEDB;
+}
+
+.custom-control-input:focus~.custom-control-label::before {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.custom-radio .custom-control-input:checked~.custom-control-label::after {
+    /* width: 10px;
+    height: 10px;
+    border-radius: 50%;*/
+    background: $yellow;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    left: -19.7px;
+    top: 8.7px;
+}
+
+.custom-checkbox {
+    .custom-control-label {
+        font-size: 15px;
+        padding-right: 20px;
+        padding-top: 2px;
+        &::before {
+            border: 2px solid $yellow;
+            background: transparent;
+            border-radius: 5px;
+        }
+    }
+    &.box-right {
+        padding-left: 0;
+        .custom-control-label::before,
+        .custom-control-label::after {
+            right: -1.5rem;
+            left: auto;
+        }
+    }
+    .custom-control-input:checked~.custom-control-label::before {
+        background-color: $yellow;
+        border-color: $yellow;
+    }
+}
+
+.form-control-title {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.form-note {
+    font-size: 15px;
+    color: $gray;
+}
+
+.form-group {
+    margin-bottom: 30px;
+}
+
+.form-control {
+    background: transparent;
+    border: 0;
+    border-radius: 0;
+    border-bottom: 1px solid #DFDEDB;
+    padding-left: 0;
+    box-shadow: none !important;
+    outline: none !important;
+    &:focus {
+        color: $btn-txt;
+        background-color: #f5f4f4;
+        border-color: $yellow;
+    }
+}
+
+textarea.form-control {
+    height: 100px;
+}
+
+.upload-image {
+    width: 300px;
+    text-align: left;
+    .input-title {
+        color: #fff;
+        font-size: 16px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .input-holder,
+    .preview-img-holder {
+        width: 80px;
+        height: 80px;
+        border: 2px solid #fff;
+        border-radius: 50%;
+        display: inline-block;
+        text-align: center;
+        margin-left: 50px;
+        margin-top: 10px;
+        cursor: pointer;
+        box-sizing: border-box;
+        vertical-align: middle;
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+        .icon {
+            display: inline-block;
+            font-size: 30px;
+            color: #fff;
+            margin-top: 25px;
+        }
+    }
+}
+
+
+/*.hide {
+    display: none;
+}
+
+.note {
+    color: #fff;
+    margin-bottom: 20px;
+    display: block;
+    font-weight: 600;
+}
+
+.preview-img-upload {
+    .preview-img-holder {
+        width: 80px;
+        height: 80px;
+        display: none !important;
+        border: none !important;
+        position: relative;
+        margin-bottom: 14px;
+        .remove-image {
+            width: 20px;
+            height: 20px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            background-color: red;
+            color: #fff;
+            border-radius: 50%;
+            font-size: 11px;
+            padding: 5px 0;
+            box-sizing: border-box;
+        }
+        .img-holder {
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+            img {
+                width: 100%;
+                min-height: 100%;
+            }
+        }
+    }
+    &.active {
+        .preview-img-holder {
+            display: inline-block !important;
+        }
+        .input-holder {
+            display: none;
+        }
+    }
+}*/
+
+.file-upload {
+    display: flex;
+    .image-upload-wrap {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 35px;
+    }
+    .image-upload-wrap:hover {
+        background-color: $yellow;
+        color: #fff
+    }
+    .btn-options {
+        display: inline-flex;
+        flex-wrap: wrap;
+        align-items: center;
+        padding-left: 30px;
+        .btn {
+            width: 100%;
+            padding: 9px 12px 7px 12px;
+            font-size: 16px;
+            font-weight: 500;
+            &.btn-warning {
+                flex: 0 0 200px;
+                max-width: 200px;
+            }
+            &.btn-outline-warning {
+                flex: 0 0 120px;
+                max-width: 120px;
+                margin-top: 20px;
+                color: $btn-txt;
+                border: 2px solid $yellow
+            }
+        }
+    }
+    .file-upload-input {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        outline: none;
+        opacity: 0;
+        cursor: pointer;
+    }
+    .file-upload-content {
+        display: none;
+        text-align: center;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        border: 2px solid $yellow;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    .image-upload-wrap {
+        border: 2px solid $yellow;
+        position: relative;
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+}
+
+.with-icon {
+    position: relative;
+    .form-control {
+        padding-left: 35px;
+    }
+    i {
+        top: 10px;
+        position: absolute;
+        color: $btn-txt;
+    }
+}

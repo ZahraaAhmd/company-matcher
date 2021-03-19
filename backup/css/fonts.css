@@ -1,0 +1,421 @@
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap");
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Thin.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Thin.woff") format("woff");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Thin.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Thin.eot?") format("eot");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Regular.woff") format("woff");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Regular.eot?") format("eot");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Medium.woff") format("woff");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Medium.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Medium.eot?") format("eot");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Light.woff") format("woff");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Light.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Light.eot?") format("eot");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Bold.woff") format("woff");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Bold.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Bold.eot?") format("eot");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Black.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Black.woff") format("woff");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Black.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "spoof";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/Spoof-Black.eot?") format("eot");
+}
+
+@font-face {
+    font-family: "AvenirNext";
+    font-style: "";
+    font-weight: "";
+    src: url("../fonts/AvenirNextLTPro-Regular_0.otf") format("opentype");
+}
+
+
+/*
+@include font-face("spoof",
+"../fonts/Spoof-Bold",
+"",
+"",
+"woff2");
+@include font-face("spoof",
+"../fonts/Spoof-Medium",
+"",
+"",
+"woff2");
+@include font-face("spoof",
+"../fonts/Spoof-Regular",
+"",
+"",
+"woff2");
+@include font-face("Cera-meduim",
+"../fonts/CeraPro-Medium",
+"",
+"",
+"ttf");
+@include font-face("Cera-meduim",
+"../fonts/CeraPro-Medium",
+"",
+"",
+"eot");
+@include font-face("Cera-bold",
+"../fonts/CeraPro-Bold",
+"",
+"",
+"ttf");
+@include font-face("Cera-bold",
+"../fonts/CeraPro-Bold",
+"",
+"",
+"eot");
+@include font-face("Cera-bold",
+"../fonts/CeraPro-Bold",
+"",
+"",
+"woff");
+@include font-face("Avenir",
+"../fonts/AvenirLTStd-Medium",
+"600",
+"normal",
+"otf");
+@include font-face("Avenir-Roman",
+"../fonts/AvenirLTStd-Roman",
+"600",
+"normal",
+"otf");*/
+
+
+/*# sourceMappingURL=fonts.css.map */
+
+@include font-face("spoof",
+"../fonts/Spoof-Thin",
+"",
+"100",
+"woff2");
+
+/*@include font-face("spoof",
+"../fonts/Spoof-Thin",
+"",
+"100",
+"woff");
+@include font-face("spoof",
+"../fonts/Spoof-Thin",
+"",
+"100",
+"ttf");
+@include font-face("spoof",
+"../fonts/Spoof-Thin",
+"",
+"100",
+"eot");*/
+
+@include font-face("spoof",
+"../fonts/Spoof-Regular",
+"",
+"400",
+"woff2");
+
+/*@include font-face("spoof",
+"../fonts/Spoof-Regular",
+"",
+"400",
+"woff");
+@include font-face("spoof",
+"../fonts/Spoof-Regular",
+"",
+"400",
+"ttf");
+@include font-face("spoof",
+"../fonts/Spoof-Regular",
+"",
+"400",
+"eot");*/
+
+@include font-face("spoof",
+"../fonts/Spoof-Medium",
+"",
+"500",
+"woff2");
+
+/*@include font-face("spoof",
+"../fonts/Spoof-Medium",
+"",
+"500",
+"woff");
+@include font-face("spoof",
+"../fonts/Spoof-Medium",
+"",
+"500",
+"ttf");
+@include font-face("spoof",
+"../fonts/Spoof-Medium",
+"",
+"",
+"eot");*/
+
+@include font-face("spoof",
+"../fonts/Spoof-Light",
+"",
+"300",
+"woff2");
+
+/*@include font-face("spoof",
+"../fonts/Spoof-Light",
+"",
+"300",
+"woff");
+@include font-face("spoof",
+"../fonts/Spoof-Light",
+"",
+"300",
+"ttf");
+@include font-face("spoof",
+"../fonts/Spoof-Light",
+"",
+"300",
+"eot");*/
+
+@include font-face("spoof",
+"../fonts/Spoof-Bold",
+"",
+"700",
+"woff2");
+
+/*@include font-face("spoof",
+"../fonts/Spoof-Bold",
+"",
+"700",
+"woff");
+@include font-face("spoof",
+"../fonts/Spoof-Bold",
+"",
+"700",
+"ttf");
+@include font-face("spoof",
+"../fonts/Spoof-Bold",
+"",
+"700",
+"eot");*/
+
+@include font-face("spoof",
+"../fonts/Spoof-Black",
+"",
+"900",
+"woff2");
+
+/*@include font-face("spoof",
+"../fonts/Spoof-Black",
+"",
+"900",
+"woff");
+@include font-face("spoof",
+"../fonts/Spoof-Black",
+"",
+"900",
+"ttf");
+@include font-face("spoof",
+"../fonts/Spoof-Black",
+"",
+"900",
+"eot");*/
+
+@include font-face("AvenirNext",
+"../fonts/AvenirNextLTPro-Regular_0",
+"",
+"",
+"otf");
+
+/*
+@include font-face("spoof",
+"../fonts/Spoof-Bold",
+"",
+"",
+"woff2");
+@include font-face("spoof",
+"../fonts/Spoof-Medium",
+"",
+"",
+"woff2");
+@include font-face("spoof",
+"../fonts/Spoof-Regular",
+"",
+"",
+"woff2");
+@include font-face("Cera-meduim",
+"../fonts/CeraPro-Medium",
+"",
+"",
+"ttf");
+@include font-face("Cera-meduim",
+"../fonts/CeraPro-Medium",
+"",
+"",
+"eot");
+@include font-face("Cera-bold",
+"../fonts/CeraPro-Bold",
+"",
+"",
+"ttf");
+@include font-face("Cera-bold",
+"../fonts/CeraPro-Bold",
+"",
+"",
+"eot");
+@include font-face("Cera-bold",
+"../fonts/CeraPro-Bold",
+"",
+"",
+"woff");
+@include font-face("Avenir",
+"../fonts/AvenirLTStd-Medium",
+"600",
+"normal",
+"otf");
+@include font-face("Avenir-Roman",
+"../fonts/AvenirLTStd-Roman",
+"600",
+"normal",
+"otf");*/

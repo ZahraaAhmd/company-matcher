@@ -1,0 +1,22 @@
+/**** start header style ***/
+
+.bg-light {
+    background-color: transparent !important;
+    margin-bottom: 120px;
+    padding-top: 20px;
+    .navbar-nav {
+        .nav-link {
+            padding: 8px 30px;
+            color: $black;
+            font-size: 18px;
+            font-weight: 400;
+            &.login-btn {
+                background: $yellow;
+                border-radius: 5px;
+                margin-left: 30px;
+                font-weight: 500;
+                color: $btn-txt;
+            }
+        }
+    }
+}

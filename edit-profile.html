@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="icon" type="image/x-icon" href="images/icons/fav2.png">
+    <link rel="stylesheet" href="css/slick-theme.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Profile | Company Matcher</title>
+</head>
+
+<body>
+
+    <!-- start header sec -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="images/logo.svg"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+             <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="loved-ones.html">Events</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pharmacy.html">Pricing</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link login-btn" href="#">Login</a>
+                    </li>
+                </ul>
+
+            </div>
+        </div>
+    </nav>
+    <!-- end  header sec -->
+
+
+
+    <!-- start profile section -->
+    <section class="profile no-bg">
+        <!-- start breadcrumb block -->
+        <div class="breadcrumb-block">
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">Home</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Edit</li>
+                    </ol>
+                </nav>
+            </div>
+        </div>
+        <!-- end breadcrumb block -->
+        <!-- start profile head block -->
+        <div class="profile-head">
+            <div class="container">
+                <h2>Personal information</h2>
+            </div>
+        </div>
+        <!-- start profile head block -->
+
+        <!-- start event form block -->
+        <div class="event-form">
+            <div class="container">
+                <form action="#" method="post">
+                    <div class="row">
+                        <div class="form-group col-md">
+                            <div class="file-upload">
+                                <div class="image-upload-wrap">
+                                    <input class="file-upload-input" type='file' onchange="readURL(this);" accept="image/*" />
+                                    <div class="drag-text">
+                                        <i class="far fa-user"></i>
+                                    </div>
+                                </div>
+                                <div class="file-upload-content">
+                                    <img class="file-upload-image" src="#" alt="your image" />
+
+                                </div>
+                                <div class="btn-options">
+                                    <button class="btn btn-warning" type="button" onclick="$('.file-upload-input').trigger( 'click' )">Upload your image</button>
+                                    <button type="button" onclick="removeUpload()" class="btn btn-outline-warning">Remove</button>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" class="btn btn-outline-warning save-btn">Save</button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6 col-12">
+                            <input type="text" class="form-control" placeholder="Your name">
+                        </div>
+                        <div class="form-group col-md-6 col-12">
+                            <input type="text" class="form-control" placeholder="Your position">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6 col-12">
+                            <input type="tel" class="form-control" placeholder="Your Phone no.">
+                        </div>
+                        <div class="form-group col-md-6 col-12">
+                            <input type="mail" class="form-control" placeholder="Your Email">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6 col-12 with-icon">
+                            <input type="text" class="form-control" placeholder="Linkedin link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </div>
+                        <div class="form-group col-md-6 col-12 with-icon">
+                            <input type="text" class="form-control" placeholder="Twitter link">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group col-md-6 col-12 with-icon">
+                            <input type="text" class="form-control" placeholder="Facebook link">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- end event form block -->
+
+    </section>
+    <!-- end profile section -->
+
+    <!-- start footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4  col-sm-6 col-12">
+                    <a href="#"><img src="images/logo.svg" class="site-logo"></a>
+                    <p>
+                        © 2014-2021 All Rights Reserved. CompanyMatcher is a product of GlobalMark.
+                    </p>
+                </div>
+                <div class="col-md-3  col-sm-6 col-12">
+                    <h3 class="yellow-text">Contact informations</h3>
+                    <ul>
+                        <li><img src="images/icons/feather-mail.svg"> info@companymatcher.com</li>
+                        <li><img src="images/icons/feather-phone.svg"> +90 224 255 40 55</li>
+                    </ul>
+                </div>
+                <div class="col-md-3  col-sm-6 col-12">
+                    <h3 class="yellow-text">Additional links</h3>
+                    <ul>
+                        <li><a href="#">Privacy</a></li>
+                        <li><a href="#">Terms and conditions</a></li>
+                        <li><a href="#">Return policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2  col-sm-6 col-12">
+                    <div class="social-icons">
+                        <a href="#"><img src="images/icons/twitter.svg"></a>
+                        <a href="#"><img src="images/icons/facebook-square.svg"></a>
+                        <a href="#"><img src="images/icons/linkedin.svg"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+</html>
