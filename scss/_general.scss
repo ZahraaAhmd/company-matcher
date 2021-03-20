@@ -96,3 +96,13 @@ h3 {
 .yellow-bg {
     background: $yellow !important;
 }
+
+.custom-control-input:disabled~.custom-control-label::before,
+.custom-control-input[disabled]~.custom-control-label::before {
+    background-color: transparent !important;
+    border-color: $black;
+}
+
+.custom-checkbox .custom-control-input:disabled:checked~.custom-control-label::before {
+    background-color: $yellow !important;
+}

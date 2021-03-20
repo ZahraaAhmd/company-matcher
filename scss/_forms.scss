@@ -275,6 +275,15 @@ textarea.form-control {
                 padding: 0 10px
             }
         }
+        .login-page {
+            margin-left: 60px;
+            a {
+                color: $black;
+                font-weight: 500;
+                text-decoration: underline;
+                margin-left: 10px;
+            }
+        }
     }
     .img-fluid {
         width: 100%;
@@ -301,5 +310,14 @@ textarea.form-control {
         font-size: 16px;
         color: #EE8105;
         margin-top: 50px;
+    }
+    .form-note {
+        margin-top: 10px;
+    }
+    .register-container {
+        @media(min-width: 1200px) {
+            width: 93%;
+            margin-left: 0;
+        }
     }
 }

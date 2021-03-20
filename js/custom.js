@@ -71,6 +71,14 @@ $(document).ready(function() {
     $(".event-preview .btn").on('click', function() {
         $(this).toggleClass('grid-icon');
         $(".event-list .row").toggleClass('grid-block');
+    });
+    $(".package-checkout .add-package-btn").on('click', function() {
+        $(".other-packages").slideToggle();
+    });
+    $(".package-checkout .remove-package").on('click', function() {
+        $(".package-checkout .add-package-btn").css("margin-top", "20px");
+        $(this).parents('tr').remove();
+
     })
 });
 /*** start upload image js****/

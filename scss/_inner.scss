@@ -368,4 +368,130 @@
             }
         }
     }
+    /***package-table style ***/
+    .package-table {
+        padding-top: 15px;
+        table {
+            .thead-light {
+                th {
+                    background-color: #DFDEDB;
+                    border: 0;
+                    font-weight: 500;
+                    padding-top: 22px;
+                    padding-bottom: 17px;
+                    &:not(:first-child) {
+                        text-align: center
+                    }
+                    &:last-child {
+                        text-align: right;
+                        @media(min-width: 768px) {
+                            padding-right: 28px;
+                        }
+                    }
+                    &:first-child {
+                        @media(min-width: 768px) {
+                            padding-left: 28px;
+                        }
+                    }
+                }
+            }
+            tbody {
+                tr {
+                    td {
+                        vertical-align: middle;
+                        border-top: 0;
+                        border-bottom: 1px solid #dfdedb;
+                        &:not(:first-child) {
+                            text-align: center
+                        }
+                        &:last-child {
+                            text-align: right;
+                            @media(min-width: 768px) {
+                                padding-right: 28px;
+                            }
+                        }
+                        &:first-child {
+                            @media(min-width: 768px) {
+                                padding-left: 28px;
+                            }
+                        }
+                        .quantity-label {
+                            width: 48px;
+                            height: 40px;
+                            background: #FFFFFF;
+                            border-radius: 5px;
+                            display: inline-flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-right: 20px;
+                        }
+                        .fa-trash-alt {
+                            color: #DF0404
+                        }
+                    }
+                    &.btn-row {
+                        td {
+                            padding: 0;
+                            border: 0 !important;
+                            padding-bottom: 15px;
+                            .btn {
+                                border: 2px dashed #747474;
+                                color: $gray;
+                                width: 100%;
+                                transition: all 250ms ease;
+                                font-size: 18px;
+                                padding: 14px 12px 12px 12px;
+                                outline: none !important;
+                                box-shadow: none !important;
+                                .add-icon {
+                                    border: 2px solid;
+                                    width: 20px;
+                                    height: 20px;
+                                    display: inline-flex;
+                                    border-radius: 50%;
+                                    justify-content: center;
+                                    align-items: center;
+                                    /* padding: 5px 5px 0 5px; */
+                                    font-size: 18px;
+                                    padding-top: 1px;
+                                    margin-left: 15px;
+                                    vertical-align: middle;
+                                }
+                                &:hover,
+                                &:focus {
+                                    background-color: transparent;
+                                    border-color: $yellow;
+                                    color: $yellow;
+                                }
+                            }
+                        }
+                    }
+                    &.other-packages {
+                        display: none;
+                        &:first-child {
+                            td {
+                                border: 0
+                            }
+                        }
+                        td {
+                            &:first-child {
+                                font-weight: 500;
+                            }
+                            .btn {
+                                font-size: 14px;
+                                padding: 8px 28px 6px 28px
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .checkout-total {
+        width: 300px;
+        margin-top: 30px;
+        @media(min-width: 355px) {
+            width: 353px;
+        }
+    }
 }
