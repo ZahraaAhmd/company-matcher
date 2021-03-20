@@ -357,8 +357,11 @@
             }
         }
     }
-    .checkout {
+    .checkout,
+    .payment {
         margin-bottom: 120px;
+    }
+    .checkout {
         .right-side {
             @media (min-width: 992px) {
                 padding-left: 160px;
