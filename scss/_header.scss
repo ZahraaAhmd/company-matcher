@@ -10,12 +10,56 @@
             color: $black;
             font-size: 18px;
             font-weight: 400;
+            position: relative;
             &.login-btn {
                 background: $yellow;
                 border-radius: 5px;
                 margin-left: 30px;
                 font-weight: 500;
                 color: $btn-txt;
+            }
+            .fa-bell {
+                font-size: 24px;
+                @media(min-width: 992px) {
+                    margin-top: 13px;
+                }
+            }
+            .notify-num {
+                width: 19px;
+                height: 19px;
+                border-radius: 50%;
+                background: #F1CA08;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 11px;
+                position: absolute;
+                top: 5px;
+                right: 20px;
+                color: #333;
+                font-weight: 500;
+                padding-top: 2px;
+                @media(min-width: 992px) {
+                    top: 18px
+                }
+            }
+        }
+    }
+    .dropdown {
+        .dropdown-toggle {
+            .user-img {
+                background: $yellow;
+                border-radius: 50%;
+                padding: 2px;
+                img {
+                    object-fit: cover;
+                    width: 45px;
+                    height: 45px;
+                    border-radius: 50%;
+                }
+            }
+            &::after {
+                display: none;
             }
         }
     }

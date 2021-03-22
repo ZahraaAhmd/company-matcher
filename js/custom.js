@@ -68,6 +68,9 @@ $(".packages-slider").slick({
 });
 
 $(document).ready(function() {
+    $(window).on('load', function() {
+        $('#participation-days').modal('show');
+    });
     $(".event-preview .btn").on('click', function() {
         $(this).toggleClass('grid-icon');
         $(".event-list .row").toggleClass('grid-block');

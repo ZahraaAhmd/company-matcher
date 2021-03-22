@@ -106,3 +106,42 @@ h3 {
 .custom-checkbox .custom-control-input:disabled:checked~.custom-control-label::before {
     background-color: $yellow !important;
 }
+
+h2.with-border {
+    position: relative;
+    z-index: 99;
+    background: inherit;
+    font-weight: bold;
+    font-size: 40px;
+    margin-bottom: 30px;
+    text-transform: capitalize;
+    &::after {
+        content: "";
+        display: block;
+        height: 3px;
+        z-index: 1;
+        width: 100%;
+        background: $yellow;
+        top: 50%;
+        position: absolute;
+        z-index: 9;
+    }
+    span {
+        background: #f5f5f5;
+        display: inline-block;
+        z-index: 999;
+        position: relative;
+    }
+    &.right {
+        span {
+            padding-right: 20px;
+        }
+    }
+    &.center {
+        text-align: center;
+        span {
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+    }
+}
