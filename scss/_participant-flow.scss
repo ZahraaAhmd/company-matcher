@@ -455,6 +455,99 @@
 }
 
 
+/**** start part profile style ***/
+
+.text-justify {
+    text-align: justify
+}
+
+.participant-profile {
+    .profile-head {
+        width: 100%;
+        height: 250px;
+        background: url("../images/bg2.jpg") no-repeat center;
+        background-size: cover;
+    }
+    .profile-content {
+        padding-bottom: 40px;
+        @media(min-width: 992px) {
+            min-height: 1000px;
+        }
+        p.text-justify {
+            color: $black;
+            font-size: 16px;
+            max-width: 920px
+        }
+        .profile-img {
+            width: 200px;
+            height: 200px;
+            background: $yellow;
+            padding: 2px;
+            border-radius: 50%;
+            margin-top: -100px;
+            img {
+                width: 100%;
+                height: 100%;
+                border-radius: 50%;
+                object-fit: cover;
+            }
+        }
+        .participant-info {
+            h2 {
+                font-size: 40px;
+                font-weight: bold;
+                text-transform: capitalize;
+            }
+            p {
+                color: $black;
+            }
+            ul {
+                list-style-type: none;
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style-type: none;
+                    list-style: none;
+                    display: inline-block;
+                    margin-right: 20px;
+                    color: $black;
+                    font-size: 18px;
+                    img {
+                        margin-right: 5px;
+                    }
+                }
+            }
+        }
+        .part-social {
+            padding: 20px;
+            margin-bottom: 30px;
+            a {
+                color: $btn-txt;
+                margin-right: 20px
+            }
+        }
+        .btn-secondary {
+            background-color: $black;
+            border-color: $black;
+            color: #fff;
+            border-radius: 10px;
+            padding: 11px 12px 8px 15px;
+            font-size: 20px;
+        }
+        .btn-warning {
+            padding: 12px 20px;
+            font-weight: 500;
+            display: block;
+            margin-top: 30px;
+        }
+        h4 {
+            font-weight: 500;
+            font-size: 24px;
+        }
+    }
+}
+
+
 /**** modals styles *****/
 
 .modal-backdrop.show {
@@ -549,6 +642,125 @@
                             margin-right: 28px;
                             i {
                                 margin-right: 6px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &.meeting-schedule {
+        .modal-dialog {
+            width: 100%;
+            max-width: 900px;
+            .modal-content {
+                border-radius: 20px;
+            }
+            .modal-body {
+                padding: 40px;
+                .meeting-modal {
+                    .slick-arrow {
+                        top: 0px;
+                        &::before {
+                            display: none
+                        }
+                        .fas {
+                            font-size: 35px;
+                            z-index: 99;
+                            color: $yellow;
+                            background: #fff;
+                        }
+                        &.slick-next {
+                            right: 40px;
+                        }
+                        &.slick-prev {
+                            right: 80px;
+                            left: auto
+                        }
+                    }
+                    h3 {
+                        font-size: 20px;
+                        font-weight: 500;
+                        line-height: 1;
+                    }
+                    .user-info {
+                        font-size: 16px;
+                        margin-top: 16px;
+                        margin-bottom: 16px;
+                        .user-position {
+                            font-size: 14px;
+                            color: $gray;
+                            display: block
+                        }
+                    }
+                    .meeting-info {
+                        border-top: 1px solid #F0F0F0;
+                        padding-top: 16px;
+                        h4 {
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 28px;
+                            margin-bottom: 35px;
+                        }
+                        .month {
+                            font-size: 18px;
+                            font-weight: 500;
+                            line-height: 28px;
+                            margin-bottom: 25px;
+                        }
+                        .table {
+                            th {
+                                font-weight: 500;
+                                font-size: 16px;
+                                text-transform: capitalize;
+                            }
+                            td {
+                                padding: 8px 10px;
+                                .day {
+                                    font-size: 16px;
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 50%;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    padding-top: 2px;
+                                    &.expired {
+                                        color: #C9C9C9;
+                                    }
+                                    &.active {
+                                        background: $yellow;
+                                        font-weight: 500;
+                                    }
+                                }
+                            }
+                        }
+                        .meeting-time {
+                            .custom-control {
+                                margin-bottom: 30px;
+                                .custom-control-label {
+                                    font-size: 15px;
+                                    &::before {
+                                        border-color: $yellow;
+                                    }
+                                }
+                            }
+                        }
+                        .submit-form {
+                            .btn {
+                                font-size: 16px;
+                                font-weight: 500;
+                                padding: 10px 10px 7px 10px;
+                                width: calc(50% - 10px);
+                                &.disabled {
+                                    background-color: #DFDEDB;
+                                    border-color: #DFDEDB;
+                                    color: #fff;
+                                }
+                                &.btn-outline-warning {
+                                    color: $black;
+                                    margin-left: 16px;
+                                }
                             }
                         }
                     }

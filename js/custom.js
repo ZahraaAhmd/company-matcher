@@ -66,10 +66,22 @@ $(".packages-slider").slick({
         }
     ]
 });
+$(".calendar-slider").slick({
+    dots: false,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    prevArrow: '<button class="slick-prev"><i class="fas fa-angle-left"></i></button>',
+    nextArrow: '<button class="slick-next"><i class="fas fa-angle-right"></i></button>'
 
+});
 $(document).ready(function() {
     $(window).on('load', function() {
-        $('#participation-days').modal('show');
+        $('#meeting-schedule').modal('show');
+    });
+    $('.modal').on('shown.bs.modal', function(e) {
+        $('.calendar-slider').slick('setPosition');
+        $('.wrap-modal-slider').addClass('open');
     });
     $(".event-preview .btn").on('click', function() {
         $(this).toggleClass('grid-icon');

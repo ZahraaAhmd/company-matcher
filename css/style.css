@@ -208,6 +208,13 @@ h2.with-border.center span {
   padding-left: 20px;
 }
 
+.slick-slide:focus {
+  border: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
 /**** start header style ***/
 .bg-light {
   background-color: transparent !important;
@@ -2557,6 +2564,111 @@ footer .container .social-icons a {
   margin-bottom: -7px;
 }
 
+/**** start part profile style ***/
+.text-justify {
+  text-align: justify;
+}
+
+.participant-profile .profile-head {
+  width: 100%;
+  height: 250px;
+  background: url("../images/bg2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.participant-profile .profile-content {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+  .participant-profile .profile-content {
+    min-height: 1000px;
+  }
+}
+
+.participant-profile .profile-content p.text-justify {
+  color: #1E1E1E;
+  font-size: 16px;
+  max-width: 920px;
+}
+
+.participant-profile .profile-content .profile-img {
+  width: 200px;
+  height: 200px;
+  background: #F1CA08;
+  padding: 2px;
+  border-radius: 50%;
+  margin-top: -100px;
+}
+
+.participant-profile .profile-content .profile-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.participant-profile .profile-content .participant-info h2 {
+  font-size: 40px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.participant-profile .profile-content .participant-info p {
+  color: #1E1E1E;
+}
+
+.participant-profile .profile-content .participant-info ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.participant-profile .profile-content .participant-info ul li {
+  list-style-type: none;
+  list-style: none;
+  display: inline-block;
+  margin-right: 20px;
+  color: #1E1E1E;
+  font-size: 18px;
+}
+
+.participant-profile .profile-content .participant-info ul li img {
+  margin-right: 5px;
+}
+
+.participant-profile .profile-content .part-social {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.participant-profile .profile-content .part-social a {
+  color: #333333;
+  margin-right: 20px;
+}
+
+.participant-profile .profile-content .btn-secondary {
+  background-color: #1E1E1E;
+  border-color: #1E1E1E;
+  color: #fff;
+  border-radius: 10px;
+  padding: 11px 12px 8px 15px;
+  font-size: 20px;
+}
+
+.participant-profile .profile-content .btn-warning {
+  padding: 12px 20px;
+  font-weight: 500;
+  display: block;
+  margin-top: 30px;
+}
+
+.participant-profile .profile-content h4 {
+  font-weight: 500;
+  font-size: 24px;
+}
+
 /**** modals styles *****/
 .modal-backdrop.show {
   background: #1E1E1E;
@@ -2667,6 +2779,146 @@ footer .container .social-icons a {
 
 .modal.participation-days .modal-dialog .modal-body .day-info ul li i {
   margin-right: 6px;
+}
+
+.modal.meeting-schedule .modal-dialog {
+  width: 100%;
+  max-width: 900px;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-content {
+  border-radius: 20px;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body {
+  padding: 40px;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .slick-arrow {
+  top: 0px;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .slick-arrow::before {
+  display: none;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .slick-arrow .fas {
+  font-size: 35px;
+  z-index: 99;
+  color: #F1CA08;
+  background: #fff;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .slick-arrow.slick-next {
+  right: 40px;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .slick-arrow.slick-prev {
+  right: 80px;
+  left: auto;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal h3 {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .user-info {
+  font-size: 16px;
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .user-info .user-position {
+  font-size: 14px;
+  color: #747474;
+  display: block;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info {
+  border-top: 1px solid #F0F0F0;
+  padding-top: 16px;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info h4 {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 35px;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .month {
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 28px;
+  margin-bottom: 25px;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .table th {
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: capitalize;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .table td {
+  padding: 8px 10px;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .table td .day {
+  font-size: 16px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 2px;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .table td .day.expired {
+  color: #C9C9C9;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .table td .day.active {
+  background: #F1CA08;
+  font-weight: 500;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .meeting-time .custom-control {
+  margin-bottom: 30px;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .meeting-time .custom-control .custom-control-label {
+  font-size: 15px;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .meeting-time .custom-control .custom-control-label::before {
+  border-color: #F1CA08;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .submit-form .btn {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 10px 10px 7px 10px;
+  width: calc(50% - 10px);
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .submit-form .btn.disabled {
+  background-color: #DFDEDB;
+  border-color: #DFDEDB;
+  color: #fff;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .submit-form .btn.btn-outline-warning {
+  color: #1E1E1E;
+  margin-left: 16px;
 }
 
 @media (max-width: 1350px) {
