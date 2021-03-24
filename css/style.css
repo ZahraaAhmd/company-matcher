@@ -2569,6 +2569,38 @@ footer .container .social-icons a {
   text-align: justify;
 }
 
+.profile-btns {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.profile-btns .btn {
+  font-size: 16px;
+  padding: 10px 20px 8px 20px;
+  font-weight: 500;
+  color: #333333;
+}
+
+.profile-btns .btn.big {
+  padding: 15px 20px 13px 20px;
+  width: 100%;
+  max-width: 200px;
+  font-size: 18px;
+  border-radius: 10px;
+}
+
+.profile-btns .btn:first-child {
+  margin-right: 20px;
+}
+
+.profile-btns .btn.btn-gray {
+  background: #DFDEDB;
+}
+
+.profile-btns .btn.btn-warning:hover {
+  color: #fff;
+}
+
 .participant-profile h2 {
   font-size: 24px;
   font-weight: bold;
@@ -2609,28 +2641,33 @@ footer .container .social-icons a {
   text-transform: capitalize;
 }
 
-.participant-profile .company-info .company-gallery {
+.participant-profile .company-info .company-address address {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.participant-profile .company-gallery {
   margin-bottom: 40px;
 }
 
-.participant-profile .company-info .company-gallery h2 {
+.participant-profile .company-gallery h2 {
   margin-bottom: 40px;
 }
 
-.participant-profile .company-info .company-gallery .row {
+.participant-profile .company-gallery .row {
   margin: 0 -5px;
 }
 
-.participant-profile .company-info .company-gallery .row .col-6 {
+.participant-profile .company-gallery .row .col-6 {
   padding: 0 5px;
 }
 
-.participant-profile .company-info .company-gallery .gallery-img {
+.participant-profile .company-gallery .gallery-img {
   height: 89px;
   margin-bottom: 10px;
 }
 
-.participant-profile .company-info .company-gallery .gallery-img img {
+.participant-profile .company-gallery .gallery-img img {
   max-width: 100%;
   height: 100%;
   width: 100%;
@@ -2639,11 +2676,11 @@ footer .container .social-icons a {
      object-fit: cover;
 }
 
-.participant-profile .company-info .company-managers {
+.participant-profile .company-managers {
   margin-bottom: 40px;
 }
 
-.participant-profile .company-info .company-managers .manager-block {
+.participant-profile .company-managers .manager-block {
   background: rgba(255, 255, 255, 0.8);
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
@@ -2658,7 +2695,7 @@ footer .container .social-icons a {
   margin-bottom: 15px;
 }
 
-.participant-profile .company-info .company-managers .manager-block img {
+.participant-profile .company-managers .manager-block img {
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 5px;
@@ -2669,14 +2706,9 @@ footer .container .social-icons a {
   margin-right: 10px;
 }
 
-.participant-profile .company-info .company-managers .manager-block .manager-info {
+.participant-profile .company-managers .manager-block .manager-info {
   font-size: 15px;
   line-height: 20px;
-}
-
-.participant-profile .company-info .company-address address {
-  font-size: 16px;
-  margin-bottom: 20px;
 }
 
 .participant-profile .profile-content {
@@ -2925,6 +2957,180 @@ footer .container .social-icons a {
   margin-bottom: 0;
   padding-bottom: 0;
   padding-left: 0;
+}
+
+.participant-profile .company-form {
+  padding-bottom: 40px;
+}
+
+@media (min-width: 992px) {
+  .participant-profile .company-form {
+    padding-bottom: 150px;
+  }
+}
+
+.participant-profile .company-form h1 {
+  font-size: 34px;
+  line-height: 28px;
+  margin-bottom: 40px;
+}
+
+.participant-profile .company-form .form-group {
+  margin-bottom: 25px;
+}
+
+.participant-profile .company-form label {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.participant-profile .company-form .form-control {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  border: 0;
+  padding: 12px 20px;
+  height: 45px;
+}
+
+.participant-profile .company-form .form-control::-webkit-input-placeholder {
+  color: #DFDEDB;
+}
+
+.participant-profile .company-form .form-control:-ms-input-placeholder {
+  color: #DFDEDB;
+}
+
+.participant-profile .company-form .form-control::-ms-input-placeholder {
+  color: #DFDEDB;
+}
+
+.participant-profile .company-form .form-control::placeholder {
+  color: #DFDEDB;
+}
+
+.participant-profile .company-form textarea.form-control {
+  height: 120px;
+}
+
+.participant-profile .company-form .custom-file-label {
+  height: 45px;
+  padding: 12px 20px 10px 20px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #DFDEDB;
+  background-color: #fff;
+  border: 0;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.participant-profile .company-form .custom-file-label::after {
+  background-color: #F1CA08;
+  color: #333333;
+  font-size: 14px;
+  font-weight: 500;
+  top: 6px;
+  right: 9px;
+}
+
+.participant-profile .company-form .border-bottom {
+  border-color: #DFDEDB;
+  margin-bottom: 25px;
+}
+
+.participant-profile .company-form h2 {
+  margin-bottom: 25px;
+}
+
+.participant-profile .company-form .company-gallery .gallery-img {
+  height: 175px;
+  position: relative;
+}
+
+.participant-profile .company-form .company-gallery .gallery-img .delete-img {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: #fff;
+  font-size: 25px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  cursor: pointer;
+}
+
+.participant-profile .company-form .company-gallery .gallery-img:hover .delete-img {
+  opacity: 1;
+  visibility: visible;
+}
+
+.participant-profile .company-form .product-block {
+  position: relative;
+}
+
+.participant-profile .company-form .product-block .edit-product {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 250ms ease;
+  transition: all 250ms ease;
+  cursor: pointer;
+}
+
+.participant-profile .company-form .product-block:hover .fa-edit {
+  visibility: visible;
+  opacity: 1;
+}
+
+.participant-profile .company-form .product-code {
+  font-weight: 400;
+}
+
+.participant-profile .company-form .product-code span {
+  display: block;
+  margin-left: 0 !important;
+}
+
+.participant-profile .company-form .save-edits {
+  display: none;
+}
+
+.participant-profile .company-form .save-edits .btn {
+  background: #1E1E1E;
+  color: #fff;
+  font-weight: bold;
+  font-size: 14px;
+  width: 65px;
+  padding-top: 7px;
+}
+
+.participant-profile .company-form .customer-block {
+  max-width: 100%;
+}
+
+.participant-profile .company-form .customer-block .fa-edit {
+  float: right;
+  margin-top: 4px;
+}
+
+.participant-profile .company-form .custom-control.float-right .custom-control-input,
+.participant-profile .company-form .custom-control.float-right .custom-control-label::before,
+.participant-profile .company-form .custom-control.float-right .custom-control-label::after {
+  right: 0;
+  left: auto;
+}
+
+.participant-profile .company-form .custom-control.float-right .custom-control-label {
+  padding-right: 30px;
+  font-weight: 400;
+  font-size: 15px;
 }
 
 /**** modals styles *****/

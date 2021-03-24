@@ -461,6 +461,33 @@
     text-align: justify
 }
 
+.profile-btns {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    .btn {
+        font-size: 16px;
+        padding: 10px 20px 8px 20px;
+        font-weight: 500;
+        color: $btn-txt;
+        &.big {
+            padding: 15px 20px 13px 20px;
+            width: 100%;
+            max-width: 200px;
+            font-size: 18px;
+            border-radius: 10px;
+        }
+        &:first-child {
+            margin-right: 20px;
+        }
+        &.btn-gray {
+            background: #DFDEDB;
+        }
+        &.btn-warning:hover {
+            color: #fff
+        }
+    }
+}
+
 .participant-profile {
     h2 {
         font-size: 24px;
@@ -494,57 +521,57 @@
                 text-transform: capitalize;
             }
         }
-        .company-gallery {
-            margin-bottom: 40px;
-            h2 {
-                margin-bottom: 40px;
-            }
-            .row {
-                margin: 0 -5px;
-                .col-6 {
-                    padding: 0 5px;
-                }
-            }
-            .gallery-img {
-                height: 89px;
-                margin-bottom: 10px;
-                img {
-                    max-width: 100%;
-                    height: 100%;
-                    width: 100%;
-                    border-radius: 5px;
-                    object-fit: cover;
-                }
-            }
-        }
-        .company-managers {
-            margin-bottom: 40px;
-            .manager-block {
-                background: rgba(255, 255, 255, 0.8);
-                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-                display: flex;
-                padding: 13px;
-                border-radius: 10px;
-                align-items: center;
-                margin-bottom: 15px;
-                img {
-                    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
-                    border-radius: 5px;
-                    width: 70px;
-                    height: 60px;
-                    object-fit: cover;
-                    margin-right: 10px;
-                }
-                .manager-info {
-                    font-size: 15px;
-                    line-height: 20px;
-                }
-            }
-        }
         .company-address {
             address {
                 font-size: 16px;
                 margin-bottom: 20px;
+            }
+        }
+    }
+    .company-gallery {
+        margin-bottom: 40px;
+        h2 {
+            margin-bottom: 40px;
+        }
+        .row {
+            margin: 0 -5px;
+            .col-6 {
+                padding: 0 5px;
+            }
+        }
+        .gallery-img {
+            height: 89px;
+            margin-bottom: 10px;
+            img {
+                max-width: 100%;
+                height: 100%;
+                width: 100%;
+                border-radius: 5px;
+                object-fit: cover;
+            }
+        }
+    }
+    .company-managers {
+        margin-bottom: 40px;
+        .manager-block {
+            background: rgba(255, 255, 255, 0.8);
+            box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+            display: flex;
+            padding: 13px;
+            border-radius: 10px;
+            align-items: center;
+            margin-bottom: 15px;
+            img {
+                box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+                border-radius: 5px;
+                width: 70px;
+                height: 60px;
+                object-fit: cover;
+                margin-right: 10px;
+            }
+            .manager-info {
+                font-size: 15px;
+                line-height: 20px;
             }
         }
     }
@@ -771,6 +798,144 @@
                 margin-bottom: 0;
                 padding-bottom: 0;
                 padding-left: 0;
+            }
+        }
+    }
+    .company-form {
+        padding-bottom: 40px;
+        @media(min-width: 992px) {
+            padding-bottom: 150px;
+        }
+        h1 {
+            font-size: 34px;
+            line-height: 28px;
+            margin-bottom: 40px
+        }
+        .form-group {
+            margin-bottom: 25px;
+        }
+        label {
+            font-size: 16px;
+            font-weight: 500;
+            line-height: 24px;
+            margin-bottom: 10px;
+            width: 100%
+        }
+        .form-control {
+            background: rgba(255, 255, 255, 0.8);
+            border-radius: 5px;
+            border: 0;
+            padding: 12px 20px;
+            height: 45px;
+            &::placeholder {
+                color: #DFDEDB;
+            }
+        }
+        textarea.form-control {
+            height: 120px
+        }
+        .custom-file-label {
+            height: 45px;
+            padding: 12px 20px 10px 20px;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #DFDEDB;
+            background-color: #fff;
+            border: 0;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: 400;
+            &::after {
+                background-color: $yellow;
+                color: $btn-txt;
+                font-size: 14px;
+                font-weight: 500;
+                top: 6px;
+                right: 9px
+            }
+        }
+        .border-bottom {
+            border-color: #DFDEDB;
+            margin-bottom: 25px;
+        }
+        h2 {
+            margin-bottom: 25px;
+        }
+        .company-gallery .gallery-img {
+            height: 175px;
+            position: relative;
+            .delete-img {
+                position: absolute;
+                top: 15px;
+                right: 15px;
+                color: #fff;
+                font-size: 25px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 250ms ease;
+                cursor: pointer;
+            }
+            &:hover {
+                .delete-img {
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+        .product-block {
+            position: relative;
+            .edit-product {
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all 250ms ease;
+                cursor: pointer;
+            }
+            &:hover {
+                .fa-edit {
+                    visibility: visible;
+                    opacity: 1;
+                }
+            }
+        }
+        .product-code {
+            font-weight: 400;
+            span {
+                display: block;
+                margin-left: 0 !important;
+            }
+        }
+        .save-edits {
+            display: none;
+            .btn {
+                background: $black;
+                color: #fff;
+                font-weight: bold;
+                font-size: 14px;
+                width: 65px;
+                padding-top: 7px;
+            }
+        }
+        .customer-block {
+            max-width: 100%;
+            .fa-edit {
+                float: right;
+                margin-top: 4px;
+            }
+        }
+        .custom-control.float-right {
+            .custom-control-input,
+            .custom-control-label::before,
+            .custom-control-label::after {
+                right: 0;
+                left: auto
+            }
+            .custom-control-label {
+                padding-right: 30px;
+                font-weight: 400;
+                font-size: 15px;
             }
         }
     }
