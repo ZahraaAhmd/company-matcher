@@ -702,10 +702,12 @@
             font-weight: 500;
             text-transform: uppercase;
             line-height: 28px;
+            display: inline-block;
         }
     }
     .company-details {
         .details-table {
+            margin-bottom: 20px;
             .row {
                 margin: 0;
                 .col {

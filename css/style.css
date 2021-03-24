@@ -2855,6 +2855,11 @@ footer .container .social-icons a {
   font-weight: 500;
   text-transform: uppercase;
   line-height: 28px;
+  display: inline-block;
+}
+
+.participant-profile .company-details .details-table {
+  margin-bottom: 20px;
 }
 
 .participant-profile .company-details .details-table .row {
