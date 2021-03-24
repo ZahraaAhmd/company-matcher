@@ -76,9 +76,9 @@ $(".calendar-slider").slick({
 
 });
 $(document).ready(function() {
-    $(window).on('load', function() {
-        $('#meeting-schedule').modal('show');
-    });
+    /*  $(window).on('load', function() {
+          $('#meeting-schedule').modal('show');
+      });*/
     $('.modal').on('shown.bs.modal', function(e) {
         $('.calendar-slider').slick('setPosition');
         $('.wrap-modal-slider').addClass('open');
