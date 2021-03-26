@@ -75,10 +75,14 @@ $(".calendar-slider").slick({
     nextArrow: '<button class="slick-next"><i class="fas fa-angle-right"></i></button>'
 
 });
+$('.collapse').on('show.bs.collapse', function() {
+    $('.collapse.in').collapse('hide');
+});
 $(document).ready(function() {
     /*  $(window).on('load', function() {
           $('#meeting-schedule').modal('show');
       });*/
+
     $('.modal').on('shown.bs.modal', function(e) {
         $('.calendar-slider').slick('setPosition');
         $('.wrap-modal-slider').addClass('open');
@@ -94,6 +98,9 @@ $(document).ready(function() {
         $(".package-checkout .add-package-btn").css("margin-top", "20px");
         $(this).parents('tr').remove();
 
+    });
+    $(".toggle-filter").on('click', function() {
+        $('.filter-box').toggleClass('active');
     })
 });
 /*** start upload image js****/

@@ -208,7 +208,13 @@
                 </div>
                 <!-- start gallery block -->
                 <div class="company-gallery">
-                    <h2>Gallery</h2>
+                    <h2>Gallery
+                        <button type="button" class="btn btn-transparent"><img src="images/icons/add.png"></button>
+                        <div class="custom-control custom-checkbox float-right">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                            <label class="custom-control-label right-check" for="customCheck1">Show in profile</label>
+                        </div>
+                    </h2>
                     <div class="row">
                         <div class="col-md-3 col-6">
                             <div class="gallery-img">
@@ -240,7 +246,13 @@
 
                 <!-- start  managers block -->
                 <div class="company-managers">
-                    <h2>Managers</h2>
+                    <h2>Managers
+                        <button type="button" class="btn btn-transparent"><img src="images/icons/add.png"></button>
+                        <div class="custom-control custom-checkbox float-right">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                            <label class="custom-control-label right-check" for="customCheck1">Show in profile</label>
+                        </div>
+                    </h2>
                     <div class="row">
                         <div class="col-md-4 col-6">
                             <div class="manager-block">
@@ -257,7 +269,13 @@
 
                 <!-- start company products block -->
                 <div class="company-products pb-6">
-                    <h2>Products</h2>
+                    <h2>Products
+                        <button type="button" class="btn btn-transparent"><img src="images/icons/add.png"></button>
+                        <div class="custom-control custom-checkbox float-right">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                            <label class="custom-control-label right-check" for="customCheck1">Show in profile</label>
+                        </div>
+                    </h2>
                     <div class="row">
                         <div class="col-md-3 col-6">
                             <div class="product-block">
@@ -345,7 +363,13 @@
 
                 <!-- start company customers block -->
                 <div class="company-customers pb-6">
-                    <h2>Top <span>10</span> Customer</h2>
+                    <h2>Top 10 Customer
+                        <button type="button" class="btn btn-transparent"><img src="images/icons/add.png"></button>
+                        <div class="custom-control custom-checkbox float-right">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                            <label class="custom-control-label right-check" for="customCheck1">Show in profile</label>
+                        </div>
+                    </h2>
                     <div class="row">
                         <div class="col-md-4 col-sm-6 col-12">
                             <div class="customer-block">Shaw Flooring <i class="far fa-edit"></i></div>
@@ -370,7 +394,12 @@
                 <!-- end company customers block -->
 
                 <div class="">
-                    <h2>Company Details</h2>
+                    <h2>Company Details
+                        <div class="custom-control custom-checkbox float-right">
+                            <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                            <label class="custom-control-label right-check" for="customCheck1">Show in profile</label>
+                        </div>
+                    </h2>
                     <div class="border-bottom">
                         <div class="row">
                             <div class="form-group col-md-4 col-6">
@@ -422,7 +451,12 @@
 
                     <!-- start company customers block -->
                     <div class="company-customers pb-6">
-                        <h2>Factories</h2>
+                        <h2>Factories
+                            <div class="custom-control custom-checkbox float-right">
+                                <input type="checkbox" class="custom-control-input" id="customCheck1" checked>
+                                <label class="custom-control-label right-check" for="customCheck1">Show in profile</label>
+                            </div>
+                        </h2>
                         <div class="row">
                             <div class="col-md-4 col-sm-6 col-12">
                                 <div class="customer-block">Factory 1 <i class="far fa-edit"></i></div>
@@ -770,7 +804,15 @@
     <script src="js/custom.js"></script>
 
 
-
+    <script>
+        $('.custom-file-input').on('change', function() {
+            //get the file name
+            var fileName = $(this).val();
+            //replace the "Choose a file" label
+            $(this).next('.custom-file-label').addClass('choosen');
+            $(this).next('.custom-file-label').html(fileName);
+        })
+    </script>
 </body>
 
 </html>

@@ -180,6 +180,16 @@
                     }
                 }
             }
+            .about-profile {
+                p {
+                    background: rgba(255, 255, 255, 0.8);
+                    border-radius: 5px;
+                    padding: 28px;
+                    font-size: 16px;
+                    color: $black;
+                    min-height: 120px;
+                }
+            }
         }
     }
 }

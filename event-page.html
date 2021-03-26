@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/slick-theme.css">
     <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link href="css/lightbox.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/all.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Home | Company Matcher</title>
@@ -102,7 +103,26 @@
                         </div>
                         <div class="col-md-6 hidden-sm">
                             <div class="hero-img">
-                                <img src="images/test.jpg" class="img-fluid">
+
+                                <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="images/img1.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/img2.jpg" class="img-fluid">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="images/img3.jpg" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleFade" role="button" data-slide="prev">
+                                        <i class="fas fa-angle-left"></i>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleFade" role="button" data-slide="next">
+                                        <i class="fas fa-angle-right"></i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -173,7 +193,10 @@
                             <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Program</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">Market</a>
+                            <a class="nav-link" id="product-tab" data-toggle="tab" href="#product" role="tab" aria-controls="product" aria-selected="false">Market</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">contact</a>
                         </li>
                     </ul>
                     <div class="tab-content" id="myTabContent">
@@ -186,8 +209,41 @@
                                             <i class="fa fa-search"></i>
                                         </div>
                                         <div class="col-auto">
-                                            <button type="submit" class="btn btn-warning">Filters</button>
+                                            <button type="button" class="btn btn-warning toggle-filter">Filters</button>
                                         </div>
+                                    </div>
+                                    <div class="filter-box">
+                                        <div class="form-group">
+                                            <label>Countries</label>
+                                            <select class="custom-select">
+                                                <option selected>Show All</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                              </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Participant Types</label>
+                                            <select class="custom-select">
+                                                <option selected>Show All</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                              </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label>Area of activities</label>
+                                            <select class="custom-select">
+                                                <option selected>Show All</option>
+                                                <option value="1">One</option>
+                                                <option value="2">Two</option>
+                                                <option value="3">Three</option>
+                                              </select>
+                                        </div>
+                                        <div class="text-right">
+                                            <button type="submit" class="btn btn-warning">Filter</button>
+                                        </div>
+
                                     </div>
                                 </form>
                             </div>
@@ -496,8 +552,250 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">...</div>
-                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">...</div>
+                        <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div class="event-list">
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <div class="day-info">
+                                            <div class="day-head">
+                                                <span>Day 1</span>
+                                            </div>
+                                            <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                            <ul>
+                                                <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                                <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="day-info">
+                                            <div class="day-head">
+                                                <span>Day 1</span>
+                                            </div>
+                                            <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                            <ul>
+                                                <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                                <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <div class="day-info">
+                                            <div class="day-head">
+                                                <span>Day 1</span>
+                                            </div>
+                                            <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                            <ul>
+                                                <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                                <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="day-info">
+                                            <div class="day-head">
+                                                <span>Day 1</span>
+                                            </div>
+                                            <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                            <ul>
+                                                <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                                <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <div class="day-info">
+                                            <div class="day-head">
+                                                <span>Day 1</span>
+                                            </div>
+                                            <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                            <ul>
+                                                <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                                <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="day-info">
+                                            <div class="day-head">
+                                                <span>Day 1</span>
+                                            </div>
+                                            <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                            <ul>
+                                                <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                                <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6 col-12">
+                                        <div class="day-info">
+                                            <div class="day-head">
+                                                <span>Day 1</span>
+                                            </div>
+                                            <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                            <ul>
+                                                <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                                <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-12">
+                                        <div class="day-info">
+                                            <div class="day-head">
+                                                <span>Day 1</span>
+                                            </div>
+                                            <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                            <ul>
+                                                <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                                <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="product" role="tabpanel" aria-labelledby="product-tab">
+                            <div class="event-filter">
+                                <form>
+                                    <div class="row">
+                                        <div class="form-group col">
+                                            <input type="text" class="form-control" placeholder="Search">
+                                            <i class="fa fa-search"></i>
+                                        </div>
+                                        <div class="col-auto">
+                                            <select class="custom-select filter-select">
+                                                <option>Product Type</option>
+                                                <option value="">one</option>
+                                                <option value="">two</option>
+                                                <option value="">three</option>
+                                                <option value="">four</option>
+                                                <option value="">five</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </form>
+                            </div>
+                            <div class="event-list">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="details">
+
+                                            <h3>FProduct Name</h3>
+                                            <div class="participant-position">Company NAme</div>
+                                            <div class="product-code">Product Code <span>123456</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="details">
+
+                                            <h3>FProduct Name</h3>
+                                            <div class="participant-position">Company NAme</div>
+                                            <div class="product-code">Product Code <span>123456</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="details">
+
+                                            <h3>FProduct Name</h3>
+                                            <div class="participant-position">Company NAme</div>
+                                            <div class="product-code">Product Code <span>123456</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="details">
+
+                                            <h3>FProduct Name</h3>
+                                            <div class="participant-position">Company NAme</div>
+                                            <div class="product-code">Product Code <span>123456</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="details">
+
+                                            <h3>FProduct Name</h3>
+                                            <div class="participant-position">Company NAme</div>
+                                            <div class="product-code">Product Code <span>123456</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="details">
+
+                                            <h3>FProduct Name</h3>
+                                            <div class="participant-position">Company NAme</div>
+                                            <div class="product-code">Product Code <span>123456</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="details">
+
+                                            <h3>FProduct Name</h3>
+                                            <div class="participant-position">Company NAme</div>
+                                            <div class="product-code">Product Code <span>123456</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="details">
+
+                                            <h3>FProduct Name</h3>
+                                            <div class="participant-position">Company NAme</div>
+                                            <div class="product-code">Product Code <span>123456</span></div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="details">
+
+                                            <h3>FProduct Name</h3>
+                                            <div class="participant-position">Company NAme</div>
+                                            <div class="product-code">Product Code <span>123456</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                            <div class="event-list pt-4">
+                                <div class="row">
+                                    <div class="col-md-4 col-6">
+                                        <div class="event-contacts">
+                                            <img src="images/client.jpg" class="contact-img">
+                                            <div class="contact-info">
+                                                <div class="name">John Doe</div>
+                                                <div class="position">Managing Director</div>
+                                                <ul>
+                                                    <li><img src="images/icons/feather-phone.svg"> +90 551 254 378</li>
+                                                    <li><img src="images/icons/feather-mail.svg"> Johndo@gmail.com</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4 col-6">
+                                        <div class="event-contacts">
+                                            <img src="images/client.jpg" class="contact-img">
+                                            <div class="contact-info">
+                                                <div class="name">John Doe</div>
+                                                <div class="position">Managing Director</div>
+                                                <ul>
+                                                    <li><img src="images/icons/feather-phone.svg"> +90 551 254 378</li>
+                                                    <li><img src="images/icons/feather-mail.svg"> Johndo@gmail.com</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -536,26 +834,37 @@
             </div>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="col-4">
+                    <div class="col-md-5 col-6 product-outer-box">
                         <div class="product-info">
-                            <a href="#"><img src="images/img1.jpg"></a>
+                            <a class="example-image-link" href="images/img1.jpg" data-lightbox="example-set">
+                                <img src="images/img1.jpg">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="product-info">
-                            <a href="#"><img src="images/img6.jpg"></a>
+                    <div class="col-md-3 col-6 product-outer-box">
+                        <div class="product-info h-55">
+                            <a class="example-image-link" href="images/img2.jpg" data-lightbox="example-set">
+                                <img src="images/img2.jpg">
+                            </a>
                         </div>
-                        <div class="product-info">
-                            <a href="#"><img src="images/img5.jpg"></a>
+                        <div class="product-info h-45">
+                            <a class="example-image-link" href="images/img3.jpg" data-lightbox="example-set">
+                                <img src="images/img3.jpg">
+                            </a>
                         </div>
                     </div>
-                    <div class="col-4">
-                        <div class="product-info">
-                            <a href="#"><img src="images/img3.jpg"></a>
+                    <div class="col-md-4 col-12 product-outer-box">
+                        <div class="product-info h-45 w-xs-6">
+                            <a class="example-image-link" href="images/img4.jpg" data-lightbox="example-set">
+                                <img src="images/img4.jpg">
+                            </a>
                         </div>
-                        <div class="product-info">
-                            <a href="#"><img src="images/img2.jpg"></a>
+                        <div class="product-info h-55 w-xs-6">
+                            <a class="example-image-link" href="images/img5.jpg" data-lightbox="example-set">
+                                <img src="images/img5.jpg">
+                            </a>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -763,6 +1072,7 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/lightbox.min.js"></script>
     <script src="js/jquery.nicescroll.min.js"></script>
     <script src="js/custom.js"></script>
     <script>
@@ -773,6 +1083,9 @@
             background: "#fff",
             cursoropacitymin: 1,
             cursorborder: "0px"
+        });
+        $('.details-box .event-list').mouseover(function() {
+            $('.details-box .event-list').getNiceScroll().resize();
         });
     </script>
 

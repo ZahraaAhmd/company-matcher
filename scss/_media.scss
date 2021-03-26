@@ -14,6 +14,15 @@
             margin-right: 10px;
         }
     }
+    .absolute-img img {
+        max-width: 200px;
+    }
+    .participant-flow .event-hero .inner-block h1 {
+        font-size: 40px;
+    }
+    .participant-flow .event-hero .inner-block .event-feature .btn {
+        max-width: 160px
+    }
 }
 
 @media(max-width:1199.98px) {
@@ -31,6 +40,12 @@
     }
     .bg-light .navbar-nav .nav-link {
         padding: 8px 20px;
+    }
+    .participant-flow .event-hero .inner-block h1 {
+        font-size: 30px;
+    }
+    .participant-flow .event-hero .inner-block::after {
+        height: calc(100% - 225px);
     }
 }
 
