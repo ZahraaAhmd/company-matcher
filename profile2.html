@@ -185,7 +185,7 @@
                                             <div class="applied-days">
                                                 <div class="applied-head">
                                                     days of participation
-                                                    <span class="float-right">Add <i class="fas fa-plus-circle"></i></span>
+                                                    <span class="float-right" data-toggle="modal" data-target="#participation-days">Add <img src="images/icons/add.png" class="add-img"></span>
                                                 </div>
                                                 <div class="applied-content">
                                                     <div>
@@ -244,7 +244,7 @@
                                                             <td><a href="#">Meeting Link</a></td>
                                                             <td><span class="approved">Approved</span></td>
                                                             <td>
-                                                                <div class="meeting-rate">
+                                                                <div class="meeting-rate" data-toggle="modal" data-target="#rate-modal">
                                                                     <i class="fas fa-star"></i>
                                                                     <i class="fas fa-star"></i>
                                                                     <i class="fas fa-star"></i>
@@ -268,7 +268,7 @@
                                                             <td><a href="#">Meeting Link</a></td>
                                                             <td><span class="waiting">waiting approvement</span></td>
                                                             <td>
-                                                                <div class="meeting-rate">
+                                                                <div class="meeting-rate" data-toggle="modal" data-target="#rate-modal">
                                                                     <i class="fas fa-star checked"></i>
                                                                     <i class="fas fa-star checked"></i>
                                                                     <i class="fas fa-star"></i>
@@ -292,7 +292,7 @@
                                                             <td><a href="#">Meeting Link</a></td>
                                                             <td><span class="canceled">cancelled</span></td>
                                                             <td>
-                                                                <div class="meeting-rate">
+                                                                <div class="meeting-rate" data-toggle="modal" data-target="#rate-modal">
                                                                     <i class="fas fa-star checked"></i>
                                                                     <i class="fas fa-star checked"></i>
                                                                     <i class="fas fa-star checked"></i>
@@ -355,6 +355,168 @@
             </div>
         </footer>
         <!-- end footer -->
+
+        <!-- Modal -->
+        <div class="modal fade rate-modal" id="rate-modal" tabindex="-1" aria-labelledby="rate-modalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <form>
+                            <div class="rate-title">How was your meeting <strong>Hakan yilmaz</strong></div>
+                            <div class="meeting-rate">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <div class="form-group">
+                                <textarea class="form-control" placeholder="Your nots"></textarea>
+                            </div>
+                            <div>
+                                <button type="submit" class="btn btn-warning">submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Modal -->
+        <div class="modal fade participation-days" id="participation-days" tabindex="-1" aria-labelledby="participationLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+
+                    <div class="modal-body">
+                        <div class="box-title">
+                            <div class="float-right">
+                                <a href="#" data-dismiss="modal">Skip for now</a>
+                                <button type="button" class="btn btn-warning">Done</button>
+                            </div>
+                            Choose your days of participation
+                            <span>You can edit choosen days from your profile</span>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="day-info">
+                                    <div class="day-head">
+                                        <span>Day 1</span>
+                                        <div class="float-right">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                    <ul>
+                                        <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                        <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="day-info">
+                                    <div class="day-head">
+                                        <span>Day 1</span>
+                                        <div class="float-right">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                    <ul>
+                                        <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                        <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="day-info">
+                                    <div class="day-head">
+                                        <span>Day 1</span>
+                                        <div class="float-right">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                    <ul>
+                                        <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                        <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="day-info">
+                                    <div class="day-head">
+                                        <span>Day 1</span>
+                                        <div class="float-right">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                    <ul>
+                                        <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                        <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6 col-12">
+                                <div class="day-info">
+                                    <div class="day-head">
+                                        <span>Day 1</span>
+                                        <div class="float-right">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                    <ul>
+                                        <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                        <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-12">
+                                <div class="day-info">
+                                    <div class="day-head">
+                                        <span>Day 1</span>
+                                        <div class="float-right">
+                                            <div class="custom-control custom-checkbox">
+                                                <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                                <label class="custom-control-label" for="customCheck1"></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <h3>B2B Day / Meet with Supplier by Virtual Meeting</h3>
+                                    <ul>
+                                        <li><i class="far fa-clock"></i> 15:00 - 20:00</li>
+                                        <li><i class="far fa-calendar-alt"></i> 15.2.2021</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="js/jquery-3.3.1.min.js"></script>
     <script src="js/popper.min.js"></script>

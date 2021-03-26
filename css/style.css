@@ -3370,6 +3370,15 @@ footer .container .social-icons a {
   margin-left: 10px;
 }
 
+.profile2 .profile-content .content-block .table .collapsed-content td .applied-days .applied-head .float-right {
+  cursor: pointer;
+}
+
+.profile2 .profile-content .content-block .table .collapsed-content td .applied-days .applied-head .add-img {
+  margin-left: 10px;
+  width: 20px;
+}
+
 .profile2 .profile-content .content-block .table .collapsed-content td .applied-days .applied-content {
   padding: 0 28px;
 }
@@ -3418,6 +3427,10 @@ footer .container .social-icons a {
   max-width: 60px;
   padding: 9px 8px 5px 8px;
   font-size: 16px;
+}
+
+.profile2 .profile-content .content-block .table .btn.small:last-child {
+  margin-left: 20px;
 }
 
 .profile2 .profile-content .content-block .table td:last-child {
@@ -3757,6 +3770,51 @@ footer .container .social-icons a {
 .modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .submit-form .btn.btn-outline-warning {
   color: #1E1E1E;
   margin-left: 16px;
+}
+
+.modal.rate-modal .modal-dialog {
+  max-width: 600px;
+}
+
+.modal.rate-modal .modal-dialog .modal-content {
+  border-radius: 20px;
+}
+
+.modal.rate-modal .modal-dialog .modal-content .modal-body {
+  padding: 50px 15px;
+}
+
+.modal.rate-modal .modal-dialog .modal-content .modal-body form {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+.modal.rate-modal .modal-dialog .modal-content .modal-body .rate-title {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.modal.rate-modal .modal-dialog .modal-content .modal-body .meeting-rate {
+  color: #c5c5c5;
+  font-size: 23px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.modal.rate-modal .modal-dialog .modal-content .modal-body .meeting-rate i {
+  margin: 0 3px;
+}
+
+.modal.rate-modal .modal-dialog .modal-content .modal-body textarea.form-control {
+  border: 1px solid #dfdedb;
+  height: 130px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+.modal.rate-modal .modal-dialog .modal-content .modal-body .btn {
+  width: 100%;
 }
 
 @media (max-width: 1350px) {

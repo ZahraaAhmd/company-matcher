@@ -1113,6 +1113,13 @@
                             color: $yellow;
                             margin-left: 10px;
                         }
+                        .float-right {
+                            cursor: pointer;
+                        }
+                        .add-img {
+                            margin-left: 10px;
+                            width: 20px
+                        }
                     }
                     .applied-content {
                         padding: 0 28px;
@@ -1159,6 +1166,9 @@
             max-width: 60px;
             padding: 9px 8px 5px 8px;
             font-size: 16px;
+            &:last-child {
+                margin-left: 20px;
+            }
         }
         td:last-child {
             padding-right: 0;
@@ -1459,6 +1469,44 @@
                                 }
                             }
                         }
+                    }
+                }
+            }
+        }
+    }
+    &.rate-modal {
+        .modal-dialog {
+            max-width: 600px;
+            .modal-content {
+                border-radius: 20px;
+                .modal-body {
+                    padding: 50px 15px;
+                    form {
+                        max-width: 375px;
+                        margin: 0 auto;
+                    }
+                    .rate-title {
+                        text-align: center;
+                        font-size: 18px;
+                        margin-bottom: 20px;
+                    }
+                    .meeting-rate {
+                        color: rgba(197, 197, 197, 1);
+                        font-size: 23px;
+                        text-align: center;
+                        margin-bottom: 20px;
+                        i {
+                            margin: 0 3px
+                        }
+                    }
+                    textarea.form-control {
+                        border: 1px solid rgba(223, 222, 219, 1);
+                        height: 130px;
+                        padding: 15px;
+                        border-radius: 5px;
+                    }
+                    .btn {
+                        width: 100%;
                     }
                 }
             }
