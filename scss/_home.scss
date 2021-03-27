@@ -8,15 +8,18 @@
             margin-bottom: 20px;
             position: relative;
             &.with-bg {
-                &::before {
-                    content: "";
-                    display: block;
-                    position: absolute;
-                    width: 35px;
-                    height: 59px;
-                    left: -35px;
-                    top: -28px;
-                    background: url("../images/icons/Squares.svg");
+                .pattern-bg {
+                    position: relative;
+                    &::before {
+                        content: "";
+                        display: block;
+                        position: absolute;
+                        width: 35px;
+                        height: 59px;
+                        left: -35px;
+                        top: -28px;
+                        background: url("../images/icons/Squares.svg");
+                    }
                 }
             }
         }
