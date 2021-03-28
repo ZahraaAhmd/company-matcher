@@ -101,7 +101,11 @@ $(document).ready(function() {
     });
     $(".toggle-filter").on('click', function() {
         $('.filter-box').toggleClass('active');
-    })
+    });
+    /*  $(".navbar-collapse .toggle-menu").on('click', function() {
+          $(".navbar-collapse").hide();
+      });*/
+
 });
 /*** start upload image js****/
 function readURL(input) {
