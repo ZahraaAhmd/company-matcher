@@ -713,6 +713,13 @@
             }
         }
     }
+    .company-map {
+        iframe {
+            height: 320px;
+            filter: grayscale(100%) invert(92%) contrast(83%);
+            border-radius: 10px;
+        }
+    }
     .profile-content {
         padding-bottom: 40px;
         @media(min-width: 992px) {
