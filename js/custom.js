@@ -6,7 +6,6 @@ $(".opinion-slider").slick({
     responsive: [{
             breakpoint: 1025,
             settings: {
-                arrows: true,
                 slidesToShow: 2,
                 slidesToScroll: 1
             }
@@ -40,8 +39,8 @@ $(".packages-slider").slick({
             breakpoint: 1200,
             settings: {
                 /*   centerMode: true,
-                  centerPadding: '80px', */
-                arrows: true,
+                  centerPadding: '80px', 
+                arrows: true,*/
                 slidesToShow: 3,
                 slidesToScroll: 1
             }
@@ -102,9 +101,12 @@ $(document).ready(function() {
     $(".toggle-filter").on('click', function() {
         $('.filter-box').toggleClass('active');
     });
-    /*  $(".navbar-collapse .toggle-menu").on('click', function() {
-          $(".navbar-collapse").hide();
-      });*/
+    $(".navbar-collapse .toggle-menu").on('click', function() {
+        $(".navbar-collapse").fideOut();
+    });
+    $(".participant-flow .bg-light .navbar-toggler .navbar-toggler-icon").on('click', function() {
+        $(".navbar-collapse").fideIn();
+    });
 
 });
 /*** start upload image js****/

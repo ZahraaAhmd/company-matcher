@@ -356,6 +356,14 @@
         max-width: 47%;
         margin: 0 8px 15px 0;
     }
+    .hero .hero-text-box.inner-hero h1 {
+        margin-bottom: 15px;
+    }
+    .hero .hero-text-box.inner-hero .search-box .custom-select,
+    .hero .hero-text-box.inner-hero .search-box .btn-white {
+        font-size: 16px;
+        padding: 10px 8px 10px 8px;
+    }
 }
 
 @media(max-width:767.98px) {
@@ -540,6 +548,125 @@
             flex: 0 0 100%;
         }
     }
+    .package-checkout .checkout {
+        margin-bottom: 30px;
+    }
+    .package-checkout .payment {
+        .col-12 {
+            /*  order: 2;*/
+            &.right-side {
+                /*  order: 1;
+                text-align: center;*/
+                display: none;
+            }
+        }
+    }
+    .package-checkout .package-img {
+        display: none
+    }
+    .event-form .file-upload {
+        margin-bottom: 0;
+    }
+    .participant-flow .event-hero {
+        padding-bottom: 60px;
+    }
+    .products {
+        .container-fluid {
+            padding: 0
+        }
+        .row {
+            margin: 0 0px;
+        }
+        .product-outer-box {
+            height: 500px;
+            padding: 5px;
+            .h-45,
+            .h-55 {
+                height: 50%;
+            }
+            &.col-6:nth-child(2) {
+                .product-info {
+                    &:first-child {
+                        padding-bottom: 5px;
+                        &::after {
+                            height: calc(100% - 5px)
+                        }
+                    }
+                    &:last-child {
+                        padding-top: 5px;
+                        &::after {
+                            height: calc(100% - 5px);
+                            top: 5px
+                        }
+                    }
+                }
+            }
+            &.col-12 {
+                display: flex;
+                height: 250px;
+                .product-info {
+                    width: 100%;
+                    max-width: 50%;
+                    height: 100% !important;
+                    &:first-child {
+                        padding-right: 5px;
+                        &::after {
+                            width: calc(100% - 5px)
+                        }
+                    }
+                    &:last-child {
+                        padding-left: 5px;
+                        &::after {
+                            width: calc(100% - 5px);
+                            left: 5px
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .participant-flow .contact {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .hero.events-hero .hero-text-box.inner-hero .search-box {
+        max-width: 100%;
+        .row {
+            width: calc(100% - 45px);
+            margin: 0 -5px;
+            .col-4 {
+                padding: 5px
+            }
+        }
+    }
+    .events-hero {
+        padding-bottom: 0 !important;
+        .event-preview {
+            margin-top: -90px;
+        }
+    }
+    .event-list .event .event-footer .btn {
+        max-width: 115px;
+        font-size: 15px;
+    }
+    .rgister .img-fluid {
+        display: none;
+    }
+    .rgister form.login-form {
+        max-width: 100%;
+    }
+    .participant-profile .profile-content .info-head {
+        .btn {
+            margin-bottom: 20px;
+            margin-top: 15px;
+            &.btn-warning {
+                display: inline-block;
+            }
+            &.btn-secondary {
+                margin-right: 10px;
+            }
+        }
+    }
 }
 
 @media(max-width:575.98px) {
@@ -632,6 +759,49 @@
     .bg-light .small-menu ul .nav-item .nav-link .notify-num {
         right: 3px
     }
+    .participant-profile .company-managers .manager-block {
+        width: 100%;
+        max-width: 100%;
+    }
+    .file-upload .image-upload-wrap,
+    .file-upload .file-upload-content {
+        width: 80px;
+        height: 80px;
+        font-size: 22px;
+    }
+    .file-upload .btn-options {
+        padding-left: 15px;
+    }
+    .rgister {
+        h2 {
+            font-size: 30px;
+            text-align: center;
+            .sign-option {
+                float: none;
+                display: block;
+                text-align: center;
+            }
+        }
+        form .login-page {
+            margin-left: 0;
+            display: block;
+            /* text-align: center; */
+            margin-top: 20px;
+        }
+        .new-user-note {
+            text-align: center
+        }
+        .login-btns {
+            .col {
+                &:first-child {
+                    padding-right: 0;
+                }
+                &:last-child {
+                    padding-left: 0;
+                }
+            }
+        }
+    }
 }
 
 @media(max-width:500px) {
@@ -647,6 +817,47 @@
         .col-auto {
             text-align: right;
             order: 1;
+        }
+    }
+    .participant-profile .company-form h2 {
+        .float-right {
+            width: 150px;
+            float: none !important;
+            margin-left: auto;
+        }
+    }
+    h2.with-border {
+        font-size: 28px;
+    }
+    p {
+        font-size: 16px;
+    }
+    .participant-flow .contact form {
+        margin-top: 0;
+    }
+    .products .product-outer-box {
+        height: 300px;
+    }
+    .products .product-outer-box.col-12 {
+        height: 150px;
+    }
+    .hero.events-hero .hero-text-box.inner-hero .search-box .row {
+        width: 100%;
+        .col-4 {
+            max-width: 50%;
+            flex: 0 0 100%;
+            &:last-child {
+                max-width: calc(100% - 45px);
+                flex: 0 0 calc(100% - 45px);
+            }
+        }
+    }
+    .pagination-block .page-item {
+        margin: 0 5px;
+        .page-link {
+            border-radius: 3px;
+            padding: 7px 10px 4px;
+            font-size: 14px;
         }
     }
 }
@@ -673,5 +884,9 @@
     .profile2 .profile-content .content-block .table .collapsed-content td .applied-days .applied-head {
         padding: 10px 6px;
         font-size: 15px;
+    }
+    .participant-profile .col-6 {
+        max-width: 100%;
+        flex: 0 0 100%
     }
 }

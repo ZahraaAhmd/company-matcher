@@ -57,7 +57,12 @@ footer {
                 text-align: right;
             }
             a {
-                padding: 0 15px;
+                padding: 0 10px;
+            }
+            @media(min-width:1380.98px) {
+                a {
+                    padding: 0 15px;
+                }
             }
         }
     }
