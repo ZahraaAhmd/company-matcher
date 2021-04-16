@@ -181,7 +181,16 @@
     }
 }
 
+.scroll {
+    white-space: nowrap;
+    overflow-x: auto;
+    display: block;
+    -webkit-overflow-scrolling: touch;
+}
 
+.scroll li {
+    display: inline-block;
+}
 /*** about-event style ****/
 
 .about-event {
