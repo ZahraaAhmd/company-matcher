@@ -54,6 +54,9 @@
                 text-transform: capitalize;
                 font-size: 45px;
                 line-height: 1;
+                min-height: 32px;
+                max-height: 90px;
+                overflow: hidden;
                 margin-bottom: 35px;
                 @media (min-width: 1483px) {
                     font-size: 50px;
@@ -62,6 +65,7 @@
             .event-feature {
                 color: #fff;
                 max-width: 500px;
+                min-height: 200px; 
                 ul {
                     padding: 0;
                     margin: 0;
@@ -157,6 +161,55 @@
                 font-weight: 400;
             }
         }
+    }
+    .event-hero-2{
+        .inner-block{
+            padding : 0 !important;
+        }
+        .bg
+        {
+            
+        }
+        &::after {
+            bottom: -40px  ;
+            right: -40px  ;
+        }
+        &::before {
+            top: -40px;
+            left: -40px;
+        }
+        .hero-img {
+            margin-top: -199px  !important;
+            padding: 40px;
+            background: #333333;
+            border-radius: 15px;
+        }.carousel-control-next i, .carousel-control-prev i {
+            font-size: 30px;
+            padding: 7px 15px;
+            border: 2px solid #F1CA08;
+            background: #F1CA08;
+            background-image: initial;
+            background-position-x: initial;
+            background-position-y: initial;
+            background-size: initial;
+            background-attachment: initial;
+            background-origin: initial;
+            background-clip: initial;
+            background-color: rgb(241, 202, 8);
+        }
+        a.carousel-control-next {
+            left: 445px !important;
+            bottom: -310px !important;
+        }
+        a.carousel-control-prev {
+            left: -51px !important;
+            bottom: -310px !important;
+        }
+        .carousel-inner {
+            border-radius: 15px !important;
+            min-height: 350px !important;
+        }
+        
     }
     .contact {
         padding-top: 120px;
@@ -869,6 +922,16 @@
                     margin-left: 10px;
                 }
             }
+            .product-desc {
+                height: 24px;
+                overflow: hidden;
+                font-size: 16px;
+                color: $gray;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+                max-width: 100%;
+            }
+
         }
     }
     .company-customers {
@@ -978,7 +1041,7 @@
         .form-control {
             background: rgba(255, 255, 255, 0.8);
             border-radius: 5px;
-            border: 0;
+            // border: 0;
             padding: 12px 20px;
             height: 45px;
             &::placeholder {
@@ -1060,8 +1123,18 @@
                 transition: all 250ms ease;
                 cursor: pointer;
             }
+            .delete-img {
+                float: right;
+                margin: -4px 20px 0 0;
+                visibility: hidden;
+                opacity: 0;
+            }
             &:hover {
                 .fa-edit {
+                    visibility: visible;
+                    opacity: 1;
+                }
+                .delete-img {
                     visibility: visible;
                     opacity: 1;
                 }
@@ -1268,6 +1341,14 @@
     }
 }
 
+.fa-star {
+    &.checked {
+        color: $yellow;
+    }
+}
+.navbar-brand img {
+    max-height: 50px;
+  }
 
 /**** modals styles *****/
 
@@ -1394,10 +1475,12 @@
                         }
                         &.slick-next {
                             right: 40px;
+                            height: 30px;
                         }
                         &.slick-prev {
                             right: 80px;
-                            left: auto
+                            left: auto;
+                            height: 30px;
                         }
                     }
                     h3 {
@@ -1458,6 +1541,8 @@
                             }
                         }
                         .meeting-time {
+                            height:280px;
+                            overflow-y: auto;
                             .custom-control {
                                 margin-bottom: 30px;
                                 .custom-control-label {
