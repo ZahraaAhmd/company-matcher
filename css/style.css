@@ -5036,6 +5036,12 @@ footer .container .social-icons a {
   .participant-flow .event-hero.slider2 .bg .inner-block .left-slide-content h1 {
     font-size: 25px;
   }
+  .participant-flow .event-hero.slider2.slider3 .bg .inner-block .left-slide-content {
+    padding: 40px 15px;
+  }
+  .participant-flow .event-hero.slider2.slider3 .bg .inner-block .left-slide-content .btn {
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -5099,6 +5105,10 @@ footer .container .social-icons a {
     border-radius: 3px;
     padding: 7px 10px 4px;
     font-size: 14px;
+  }
+  .participant-flow .event-hero.slider2.slider3 .bg .inner-block .left-slide-content .btn {
+    width: 100%;
+    max-width: 100%;
   }
 }
 
