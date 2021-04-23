@@ -4519,6 +4519,7 @@ footer .container .social-icons a {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
+    max-width: 25%;
   }
   .event-details .details-box .nav-tabs .nav-item .nav-link {
     width: 100%;
@@ -5109,6 +5110,9 @@ footer .container .social-icons a {
   .participant-flow .event-hero.slider2.slider3 .bg .inner-block .left-slide-content .btn {
     width: 100%;
     max-width: 100%;
+  }
+  .participant-flow .event-hero .statistics span {
+    font-size: 12px;
   }
 }
 
