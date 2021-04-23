@@ -138,6 +138,10 @@ h3 {
   color: #fff;
 }
 
+.btn.mt-label {
+  margin-top: 35px;
+}
+
 .linkedin-btn {
   background-color: #0A66C2;
   border-color: #0A66C2;
@@ -215,11 +219,73 @@ h2.with-border.center span {
   outline: none;
 }
 
+.chosen-container-active .chosen-choices {
+  border: 1px solid #F1CA08 !important;
+}
+
+.chosen-container .chosen-results li.highlighted {
+  background-color: #F1CA08 !important;
+  color: #1E1E1E !important;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #747474;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #F1CA08;
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 99;
+}
+
+.slick-prev:before, .slick-prev:before,
+.slick-next:before,
+.slick-next:before {
+  display: none;
+}
+
+.slick-prev .fas,
+.slick-next .fas {
+  font-size: 25px;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.slick-prev {
+  left: -5px;
+}
+
+.slick-next {
+  right: 15px;
+}
+
 /**** start header style ***/
 .bg-light {
   background-color: transparent !important;
-  margin-bottom: 120px;
+  margin-bottom: 40px;
   padding-top: 20px;
+  padding: 15px 0px;
+  padding-top: 20px;
+  padding-right: 0px;
+  padding-bottom: 15px;
+  padding-left: 0px;
 }
 
 .bg-light .navbar-nav .nav-link {
@@ -878,6 +944,16 @@ textarea.form-control {
   display: block;
 }
 
+.moretags {
+  background: #F1CA08;
+  border-radius: 50%;
+  margin: 5px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 5px;
+  cursor: help;
+}
+
 .absolute-img img {
   position: absolute;
   /* top: -60px; */
@@ -1290,6 +1366,10 @@ textarea.form-control {
   padding-top: 20px;
 }
 
+.event-list .passed .event {
+  background: #f8f9fc;
+}
+
 .event-list .event {
   background: white 0% 0% no-repeat padding-box;
   -webkit-box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.06);
@@ -1304,12 +1384,18 @@ textarea.form-control {
   line-height: 32px;
   margin-bottom: 28px;
   font-weight: 500;
+  font-size: 18px;
+  line-height: 32px;
+  margin-bottom: 15px;
+  font-weight: 500;
+  height: 58px;
+  overflow: hidden;
 }
 
 .event-list .event ul {
   margin: 0;
   padding: 0;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
 }
 
 .event-list .event ul li {
@@ -1317,11 +1403,19 @@ textarea.form-control {
   list-style: none;
   font-size: 14px;
   margin-bottom: 15px;
+  height: 24px;
+  white-space: nowrap;
+  overflow: hidden !important;
+  text-overflow: ellipsis;
 }
 
 .event-list .event ul li i {
   color: #F1CA08;
   margin-right: 10px;
+}
+
+.event-list .event ul li a {
+  color: #747474;
 }
 
 .event-list .event .event-footer {
@@ -2191,6 +2285,9 @@ footer .container .social-icons a {
   text-transform: capitalize;
   font-size: 45px;
   line-height: 1;
+  min-height: 32px;
+  max-height: 90px;
+  overflow: hidden;
   margin-bottom: 35px;
 }
 
@@ -2203,6 +2300,7 @@ footer .container .social-icons a {
 .participant-flow .event-hero .inner-block .event-feature {
   color: #fff;
   max-width: 500px;
+  min-height: 200px;
 }
 
 .participant-flow .event-hero .inner-block .event-feature ul {
@@ -2328,6 +2426,173 @@ footer .container .social-icons a {
   margin-top: 10px;
   font-size: 15px;
   font-weight: 400;
+}
+
+.participant-flow .event-hero.slider2 {
+  padding-top: 120px;
+}
+
+.participant-flow .event-hero.slider2 .bg::before, .participant-flow .event-hero.slider2 .bg::after {
+  width: 75px;
+  height: 75px;
+}
+
+.participant-flow .event-hero.slider2 .bg::before {
+  right: -25px;
+  top: -30px;
+  left: auto;
+}
+
+.participant-flow .event-hero.slider2 .bg::after {
+  left: -25px;
+  bottom: 60px;
+  right: auto;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block {
+  padding: 0;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .col-md-6 {
+  z-index: auto;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .event-feature {
+  min-height: 0;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .left-slide-content {
+  padding: 90px 40px;
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 10px;
+  z-index: 99;
+  position: relative;
+  margin-top: -30px;
+  min-height: 500px;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .hero-img {
+  margin-top: 0;
+  margin-left: -50%;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .hero-img img {
+  max-height: 440px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .hero-img .carousel-indicators {
+  margin-right: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .hero-img .carousel-indicators li {
+  height: 6px;
+  opacity: 1;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .hero-img .carousel-indicators li.active {
+  background-color: #F1CA08;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .statistics {
+  margin-top: 30px;
+  padding-right: 30px;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .statistics .row {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.participant-flow .event-hero.slider2.slider3 .bg::after {
+  display: none;
+}
+
+.participant-flow .event-hero.slider2.slider3 .bg h1 {
+  font-size: 46px;
+}
+
+.participant-flow .event-hero.slider2.slider3 .bg .inner-block .col-md-6:first-child::before {
+  content: "";
+  display: block;
+  border-radius: 10px;
+  background: #F1CA08;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: -25px;
+  top: -30px;
+}
+
+.participant-flow .event-hero.slider2.slider3 .bg .inner-block .left-slide-content {
+  padding: 40px;
+  margin-top: 0;
+  min-height: 1px;
+}
+
+.participant-flow .event-hero-2 .inner-block {
+  padding: 0 !important;
+}
+
+.participant-flow .event-hero-2::after {
+  bottom: -40px;
+  right: -40px;
+}
+
+.participant-flow .event-hero-2::before {
+  top: -40px;
+  left: -40px;
+}
+
+.participant-flow .event-hero-2 .hero-img {
+  margin-top: -199px !important;
+  padding: 40px;
+  background: #333333;
+  border-radius: 15px;
+}
+
+.participant-flow .event-hero-2 .carousel-control-next i,
+.participant-flow .event-hero-2 .carousel-control-prev i {
+  font-size: 30px;
+  padding: 7px 15px;
+  border: 2px solid #F1CA08;
+  background: #F1CA08;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #f1ca08;
+}
+
+.participant-flow .event-hero-2 a.carousel-control-next {
+  left: 445px !important;
+  bottom: -310px !important;
+}
+
+.participant-flow .event-hero-2 a.carousel-control-prev {
+  left: -51px !important;
+  bottom: -310px !important;
+}
+
+.participant-flow .event-hero-2 .carousel-inner {
+  border-radius: 15px !important;
+  min-height: 350px !important;
 }
 
 .participant-flow .contact {
@@ -3159,6 +3424,16 @@ footer .container .social-icons a {
   margin-left: 10px;
 }
 
+.participant-profile .company-products .product-block .product-desc {
+  height: 24px;
+  overflow: hidden;
+  font-size: 16px;
+  color: #747474;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
 .participant-profile .company-customers .customer-block {
   width: 100%;
   max-width: 340px;
@@ -3273,7 +3548,6 @@ footer .container .social-icons a {
 .participant-profile .company-form .form-control {
   background: rgba(255, 255, 255, 0.8);
   border-radius: 5px;
-  border: 0;
   padding: 12px 20px;
   height: 45px;
 }
@@ -3383,7 +3657,19 @@ footer .container .social-icons a {
   cursor: pointer;
 }
 
+.participant-profile .company-form .product-block .delete-img {
+  float: right;
+  margin: -4px 20px 0 0;
+  visibility: hidden;
+  opacity: 0;
+}
+
 .participant-profile .company-form .product-block:hover .fa-edit {
+  visibility: visible;
+  opacity: 1;
+}
+
+.participant-profile .company-form .product-block:hover .delete-img {
   visibility: visible;
   opacity: 1;
 }
@@ -3602,6 +3888,14 @@ footer .container .social-icons a {
   margin-right: 20px;
 }
 
+.fa-star.checked {
+  color: #F1CA08;
+}
+
+.navbar-brand img {
+  max-height: 50px;
+}
+
 /**** modals styles *****/
 .day-info {
   background: #F5F5F5;
@@ -3744,11 +4038,13 @@ footer .container .social-icons a {
 
 .modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .slick-arrow.slick-next {
   right: 40px;
+  height: 30px;
 }
 
 .modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .slick-arrow.slick-prev {
   right: 80px;
   left: auto;
+  height: 30px;
 }
 
 .modal.meeting-schedule .modal-dialog .modal-body .meeting-modal h3 {
@@ -3822,6 +4118,11 @@ footer .container .social-icons a {
 .modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .table td .day.active {
   background: #F1CA08;
   font-weight: 500;
+}
+
+.modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .meeting-time {
+  height: 280px;
+  overflow-y: auto;
 }
 
 .modal.meeting-schedule .modal-dialog .modal-body .meeting-modal .meeting-info .meeting-time .custom-control {
@@ -3942,8 +4243,10 @@ footer .container .social-icons a {
   .bg-light .navbar-nav .nav-link {
     padding: 8px 20px;
   }
-  .participant-flow .event-hero .inner-block h1 {
+  .participant-flow .event-hero .inner-block h1,
+  .participant-flow .event-hero.slider2.slider3 .bg h1 {
     font-size: 30px;
+    line-height: 1.2;
   }
   .participant-flow .event-hero .inner-block::after {
     height: calc(100% - 225px);
@@ -4056,6 +4359,7 @@ footer .container .social-icons a {
   .bg-light .navbar-nav .nav-item.active .nav-link.login-btn {
     color: #333333;
     font-weight: 500;
+    margin: 0;
   }
   .bg-light .navbar-toggler {
     border: 0;
@@ -4156,23 +4460,23 @@ footer .container .social-icons a {
   .profile2 .profile-content .content-block .table .meeting-table tbody tr td strong {
     max-width: 200px;
   }
-  .participant-flow .event-hero .inner-block .col-md-6 {
+  .participant-flow .event-hero:not(.slider2) .inner-block .col-md-6 {
     max-width: 100%;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
-  .participant-flow .event-hero .inner-block .col-md-6:first-child {
+  .participant-flow .event-hero:not(.slider2) .inner-block .col-md-6:first-child {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .participant-flow .event-hero .inner-block .col-md-6:last-child {
+  .participant-flow .event-hero:not(.slider2) .inner-block .col-md-6:last-child {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .participant-flow .event-hero .hero-img {
+  .participant-flow .event-hero:not(.slider2) .hero-img {
     margin-top: -200px;
     position: relative;
     margin-bottom: 20px;
@@ -4181,7 +4485,7 @@ footer .container .social-icons a {
     margin: -200px auto 40px auto;
     border-radius: 10px;
   }
-  .participant-flow .event-hero .hero-img::after, .participant-flow .event-hero .hero-img::before {
+  .participant-flow .event-hero:not(.slider2) .hero-img::after, .participant-flow .event-hero:not(.slider2) .hero-img::before {
     content: "";
     display: block;
     border-radius: 10px;
@@ -4190,25 +4494,25 @@ footer .container .social-icons a {
     height: 60px;
     position: absolute;
   }
-  .participant-flow .event-hero .hero-img::before {
+  .participant-flow .event-hero:not(.slider2) .hero-img::before {
     top: -28px;
     left: -27px;
   }
-  .participant-flow .event-hero .hero-img::after {
+  .participant-flow .event-hero:not(.slider2) .hero-img::after {
     bottom: -28px;
     right: -27px;
   }
-  .participant-flow .event-hero .hero-img .carousel-inner img {
+  .participant-flow .event-hero:not(.slider2) .hero-img .carousel-inner img {
     max-height: 550px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .participant-flow .event-hero .bg::after,
-  .participant-flow .event-hero .bg::before {
+  .participant-flow .event-hero:not(.slider2) .bg::after,
+  .participant-flow .event-hero:not(.slider2) .bg::before {
     display: none;
   }
-  .participant-flow .event-hero .inner-block::after {
+  .participant-flow .event-hero:not(.slider2) .inner-block::after {
     height: calc(100% - 170px);
   }
   .participant-flow .event-hero .statistics .col-auto {
@@ -4270,6 +4574,12 @@ footer .container .social-icons a {
   .hero .hero-text-box.inner-hero .search-box .btn-white {
     font-size: 16px;
     padding: 10px 8px 10px 8px;
+  }
+  .participant-flow .event-hero.slider2 .inner-block .event-feature .btn {
+    max-width: 130px;
+  }
+  .participant-flow .event-hero.slider2 .inner-block .event-feature .btn.btn-warning {
+    margin-right: 5px;
   }
 }
 
@@ -4566,6 +4876,34 @@ footer .container .social-icons a {
   .participant-profile .profile-content .info-head .btn.btn-secondary {
     margin-right: 10px;
   }
+  .participant-flow .event-hero.slider2 .bg::after {
+    display: none;
+  }
+  .participant-flow .event-hero.slider2 .bg .inner-block .hero-img {
+    display: none;
+  }
+  .participant-flow .event-hero.slider2 .bg .inner-block .left-slide-content {
+    margin-top: 0;
+    min-height: auto;
+  }
+  .participant-flow .event-hero.slider2 .bg .inner-block .col-md-6:first-child::before {
+    content: "";
+    display: block;
+    border-radius: 10px;
+    background: #F1CA08;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: -25px;
+    top: auto !important;
+    bottom: -30px !important;
+  }
+  .participant-flow .event-hero.slider2 .bg .inner-block .statistics {
+    padding-right: 0;
+  }
+  .features .feature-box .btn {
+    margin-bottom: 10px;
+  }
 }
 
 @media (max-width: 575.98px) {
@@ -4692,6 +5030,12 @@ footer .container .social-icons a {
   .rgister .login-btns .col:last-child {
     padding-left: 0;
   }
+  .participant-flow .event-hero.slider2 .bg .inner-block .left-slide-content {
+    padding: 40px 25px;
+  }
+  .participant-flow .event-hero.slider2 .bg .inner-block .left-slide-content h1 {
+    font-size: 25px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -4791,7 +5135,3 @@ footer .container .social-icons a {
   }
 }
 /*# sourceMappingURL=style.css.map */
-
-.navbar-brand img {
-  max-height: 50px;
-}

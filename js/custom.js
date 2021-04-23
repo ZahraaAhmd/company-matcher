@@ -34,13 +34,15 @@ $(".packages-slider").slick({
     dots: false,
     arrows: false,
     slidesToShow: 4,
+    prevArrow: '<button class="slick-prev"><i class="fas fa-angle-left"></i></button>',
+    nextArrow: '<button class="slick-next"><i class="fas fa-angle-right"></i></button>',
 
     responsive: [{
             breakpoint: 1200,
             settings: {
                 /*   centerMode: true,
-                  centerPadding: '80px', 
-                arrows: true,*/
+                  centerPadding: '80px', */
+                arrows: true,
                 slidesToShow: 3,
                 slidesToScroll: 1
             }
@@ -48,6 +50,7 @@ $(".packages-slider").slick({
         {
             breakpoint: 992,
             settings: {
+                arrows: true,
                 slidesToShow: 2,
                 slidesToScroll: 1,
             }
@@ -58,8 +61,6 @@ $(".packages-slider").slick({
                 slidesToShow: 1,
                 slidesToScroll: 1,
                 arrows: true,
-                prevArrow: '<button class="slick-prev"><i class="fas fa-angle-left"></i></button>',
-                nextArrow: '<button class="slick-next"><i class="fas fa-angle-right"></i></button>',
 
             }
         }

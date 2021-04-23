@@ -41,8 +41,10 @@
     .bg-light .navbar-nav .nav-link {
         padding: 8px 20px;
     }
-    .participant-flow .event-hero .inner-block h1 {
+    .participant-flow .event-hero .inner-block h1,
+    .participant-flow .event-hero.slider2.slider3 .bg h1 {
         font-size: 30px;
+        line-height: 1.2;
     }
     .participant-flow .event-hero .inner-block::after {
         height: calc(100% - 225px);
@@ -262,7 +264,7 @@
     .profile2 .profile-content .content-block .table .meeting-table tbody tr td strong {
         max-width: 200px;
     }
-    .participant-flow .event-hero .inner-block .col-md-6 {
+    .participant-flow .event-hero:not(.slider2) .inner-block .col-md-6 {
         max-width: 100%;
         flex: 0 0 100%;
         &:first-child {
@@ -272,7 +274,7 @@
             order: 1;
         }
     }
-    .participant-flow .event-hero .hero-img {
+    .participant-flow .event-hero:not(.slider2) .hero-img {
         margin-top: -200px;
         position: relative;
         margin-bottom: 20px;
@@ -306,11 +308,11 @@
             }
         }
     }
-    .participant-flow .event-hero .bg::after,
-    .participant-flow .event-hero .bg::before {
+    .participant-flow .event-hero:not(.slider2) .bg::after,
+    .participant-flow .event-hero:not(.slider2) .bg::before {
         display: none
     }
-    .participant-flow .event-hero .inner-block::after {
+    .participant-flow .event-hero:not(.slider2) .inner-block::after {
         height: calc(100% - 170px);
     }
     .participant-flow .event-hero .statistics .col-auto {
@@ -364,6 +366,14 @@
     .hero .hero-text-box.inner-hero .search-box .btn-white {
         font-size: 16px;
         padding: 10px 8px 10px 8px;
+    }
+    .participant-flow .event-hero.slider2 {
+        .inner-block .event-feature .btn {
+            max-width: 130px;
+            &.btn-warning {
+                margin-right: 5px;
+            }
+        }
     }
 }
 
@@ -668,6 +678,40 @@
             }
         }
     }
+    .participant-flow .event-hero.slider2 {
+        .bg {
+            &::after {
+                display: none
+            }
+            .inner-block {
+                .hero-img {
+                    display: none;
+                }
+                .left-slide-content {
+                    margin-top: 0;
+                    min-height: auto;
+                }
+                .col-md-6:first-child::before {
+                    content: "";
+                    display: block;
+                    border-radius: 10px;
+                    background: #F1CA08;
+                    width: 75px;
+                    height: 75px;
+                    position: absolute;
+                    left: -25px;
+                    top: auto !important;
+                    bottom: -30px !important;
+                }
+                .statistics {
+                    padding-right: 0;
+                }
+            }
+        }
+    }
+    .features .feature-box .btn {
+        margin-bottom: 10px;
+    }
 }
 
 @media(max-width:575.98px) {
@@ -801,6 +845,12 @@
                     padding-left: 0;
                 }
             }
+        }
+    }
+    .participant-flow .event-hero.slider2 .bg .inner-block .left-slide-content {
+        padding: 40px 25px;
+        h1 {
+            font-size: 25px;
         }
     }
 }

@@ -78,7 +78,8 @@ h3 {
         color: #fff
     }
 }
-.btn{
+
+.btn {
     &.mt-label {
         margin-top: 35px;
     }
@@ -161,30 +162,61 @@ h2.with-border {
 
 .chosen-container-active .chosen-choices {
     border: 1px solid $yellow !important;
-    
 }
+
 .chosen-container .chosen-results li.highlighted {
-    background-color: $yellow  !important;
+    background-color: $yellow !important;
     color: $black !important;
 }
 
+
 /* width */
+
 ::-webkit-scrollbar {
     width: 7px;
     height: 7px;
-  }
-  
-  /* Track */
-  ::-webkit-scrollbar-track {
-    background: #f1f1f1; 
-  }
-   
-  /* Handle */
-  ::-webkit-scrollbar-thumb {
-    background: $gray; 
-  }
-  
-  /* Handle on hover */
-  ::-webkit-scrollbar-thumb:hover {
-    background: $yellow; 
-  }
+}
+
+
+/* Track */
+
+ ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+
+/* Handle */
+
+ ::-webkit-scrollbar-thumb {
+    background: $gray;
+}
+
+
+/* Handle on hover */
+
+ ::-webkit-scrollbar-thumb:hover {
+    background: $yellow;
+}
+
+.slick-prev,
+.slick-next {
+    z-index: 99;
+    &:before,
+    &:before {
+        display: none;
+    }
+    .fas {
+        font-size: 25px;
+        background: rgba(0, 0, 0, 0.75);
+        color: #fff;
+        padding: 10px 15px;
+    }
+}
+
+.slick-prev {
+    left: -5px;
+}
+
+.slick-next {
+    right: 15px;
+}
