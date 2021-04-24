@@ -120,7 +120,7 @@
 
 @media(max-width:991.98px) {
     .bg-light {
-        margin-bottom: 60px;
+        margin-bottom: 0px;
         padding-left: 0;
         padding-right: 0;
         .hide-md {
@@ -387,7 +387,10 @@
         font-size: 20px;
     }
     .navbar-light .navbar-brand img {
-        max-width: 170px
+        max-width: 250px
+    }
+    .slick-prev, .slick-next {
+        top: 30% !important;
     }
     .hero .hero-text-box {
         text-align: center;
@@ -660,6 +663,7 @@
     .event-list .event .event-footer .btn {
         max-width: 115px;
         font-size: 15px;
+        float: right;
     }
     .rgister .img-fluid {
         display: none;
