@@ -119,3 +119,17 @@
 .navbar-brand img {
     max-height: 50px;
 }
+.notification-list {
+    position: absolute;
+    width: 260px;
+    right: 0;
+    background: whitesmoke;
+    padding: 0;
+}
+
+.notification-list p {
+   border-top: 1px solid gray;
+   text-align : left;
+   font-weight:500;
+   padding: 10px;
+}

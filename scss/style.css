@@ -249,6 +249,33 @@ h2.with-border.center span {
   background: #F1CA08;
 }
 
+.slick-prev,
+.slick-next {
+  z-index: 99;
+}
+
+.slick-prev:before, .slick-prev:before,
+.slick-next:before,
+.slick-next:before {
+  display: none;
+}
+
+.slick-prev .fas,
+.slick-next .fas {
+  font-size: 25px;
+  background: #f1ca08;
+  color: #fff;
+  padding: 10px 15px;
+}
+
+.slick-prev {
+  left: -5px;
+}
+
+.slick-next {
+  right: 15px;
+}
+
 /**** start header style ***/
 .bg-light {
   background-color: transparent !important;
@@ -389,6 +416,21 @@ h2.with-border.center span {
 
 .navbar-brand img {
   max-height: 50px;
+}
+
+.notification-list {
+  position: absolute;
+  width: 260px;
+  right: 0;
+  background: whitesmoke;
+  padding: 0;
+}
+
+.notification-list p {
+  border-top: 1px solid gray;
+  text-align: left;
+  font-weight: 500;
+  padding: 10px;
 }
 
 /*** start events style ***/
@@ -2401,6 +2443,121 @@ footer .container .social-icons a {
   font-weight: 400;
 }
 
+.participant-flow .event-hero.slider2 {
+  padding-top: 120px;
+}
+
+.participant-flow .event-hero.slider2 .bg::before, .participant-flow .event-hero.slider2 .bg::after {
+  width: 75px;
+  height: 75px;
+}
+
+.participant-flow .event-hero.slider2 .bg::before {
+  right: -25px;
+  top: -30px;
+  left: auto;
+}
+
+.participant-flow .event-hero.slider2 .bg::after {
+  left: -25px;
+  bottom: 60px;
+  right: auto;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block {
+  padding: 0;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .col-md-6 {
+  z-index: auto;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block::after {
+  content: "";
+  width: 0;
+  height: 0;
+  display: none;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .event-feature {
+  min-height: 0;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .left-slide-content {
+  padding: 90px 40px;
+  background: rgba(30, 30, 30, 0.95);
+  border-radius: 10px;
+  z-index: 99;
+  position: relative;
+  margin-top: -30px;
+  min-height: 500px;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .hero-img {
+  margin-top: 0;
+  margin-left: -50%;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .hero-img img {
+  max-height: 440px;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .hero-img .carousel-indicators {
+  margin-right: 20px;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .hero-img .carousel-indicators li {
+  height: 6px;
+  opacity: 1;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .hero-img .carousel-indicators li.active {
+  background-color: #F1CA08;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .statistics {
+  margin-top: 30px;
+  padding-right: 30px;
+}
+
+.participant-flow .event-hero.slider2 .bg .inner-block .statistics .row {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.participant-flow .event-hero.slider2.slider3 .bg::after {
+  display: none;
+}
+
+.participant-flow .event-hero.slider2.slider3 .bg h1 {
+  font-size: 46px;
+}
+
+.participant-flow .event-hero.slider2.slider3 .bg .inner-block .col-md-6:first-child::before {
+  content: "";
+  display: block;
+  border-radius: 10px;
+  background: #F1CA08;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+  left: -25px;
+  top: -30px;
+}
+
+.participant-flow .event-hero.slider2.slider3 .bg .inner-block .left-slide-content {
+  padding: 40px;
+  margin-top: 0;
+  min-height: 1px;
+}
+
 .participant-flow .event-hero-2 .inner-block {
   padding: 0 !important;
 }
@@ -2416,13 +2573,14 @@ footer .container .social-icons a {
 }
 
 .participant-flow .event-hero-2 .hero-img {
-  margin-top: -199px  !important;
+  margin-top: -199px !important;
   padding: 40px;
   background: #333333;
   border-radius: 15px;
 }
 
-.participant-flow .event-hero-2 .carousel-control-next i, .participant-flow .event-hero-2 .carousel-control-prev i {
+.participant-flow .event-hero-2 .carousel-control-next i,
+.participant-flow .event-hero-2 .carousel-control-prev i {
   font-size: 30px;
   padding: 7px 15px;
   border: 2px solid #F1CA08;
@@ -4100,8 +4258,10 @@ footer .container .social-icons a {
   .bg-light .navbar-nav .nav-link {
     padding: 8px 20px;
   }
-  .participant-flow .event-hero .inner-block h1 {
+  .participant-flow .event-hero .inner-block h1,
+  .participant-flow .event-hero.slider2.slider3 .bg h1 {
     font-size: 30px;
+    line-height: 1.2;
   }
   .participant-flow .event-hero .inner-block::after {
     height: calc(100% - 225px);
@@ -4177,7 +4337,7 @@ footer .container .social-icons a {
 
 @media (max-width: 991.98px) {
   .bg-light {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -4315,23 +4475,23 @@ footer .container .social-icons a {
   .profile2 .profile-content .content-block .table .meeting-table tbody tr td strong {
     max-width: 200px;
   }
-  .participant-flow .event-hero .inner-block .col-md-6 {
+  .participant-flow .event-hero:not(.slider2) .inner-block .col-md-6 {
     max-width: 100%;
     -webkit-box-flex: 0;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%;
   }
-  .participant-flow .event-hero .inner-block .col-md-6:first-child {
+  .participant-flow .event-hero:not(.slider2) .inner-block .col-md-6:first-child {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
   }
-  .participant-flow .event-hero .inner-block .col-md-6:last-child {
+  .participant-flow .event-hero:not(.slider2) .inner-block .col-md-6:last-child {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
   }
-  .participant-flow .event-hero .hero-img {
+  .participant-flow .event-hero:not(.slider2) .hero-img {
     margin-top: -200px;
     position: relative;
     margin-bottom: 20px;
@@ -4340,7 +4500,7 @@ footer .container .social-icons a {
     margin: -200px auto 40px auto;
     border-radius: 10px;
   }
-  .participant-flow .event-hero .hero-img::after, .participant-flow .event-hero .hero-img::before {
+  .participant-flow .event-hero:not(.slider2) .hero-img::after, .participant-flow .event-hero:not(.slider2) .hero-img::before {
     content: "";
     display: block;
     border-radius: 10px;
@@ -4349,31 +4509,32 @@ footer .container .social-icons a {
     height: 60px;
     position: absolute;
   }
-  .participant-flow .event-hero .hero-img::before {
+  .participant-flow .event-hero:not(.slider2) .hero-img::before {
     top: -28px;
     left: -27px;
   }
-  .participant-flow .event-hero .hero-img::after {
+  .participant-flow .event-hero:not(.slider2) .hero-img::after {
     bottom: -28px;
     right: -27px;
   }
-  .participant-flow .event-hero .hero-img .carousel-inner img {
+  .participant-flow .event-hero:not(.slider2) .hero-img .carousel-inner img {
     max-height: 550px;
     width: 100%;
     -o-object-fit: cover;
        object-fit: cover;
   }
-  .participant-flow .event-hero .bg::after,
-  .participant-flow .event-hero .bg::before {
+  .participant-flow .event-hero:not(.slider2) .bg::after,
+  .participant-flow .event-hero:not(.slider2) .bg::before {
     display: none;
   }
-  .participant-flow .event-hero .inner-block::after {
+  .participant-flow .event-hero:not(.slider2) .inner-block::after {
     height: calc(100% - 170px);
   }
   .participant-flow .event-hero .statistics .col-auto {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 25%;
             flex: 0 0 25%;
+    max-width: 25%;
   }
   .event-details .details-box .nav-tabs .nav-item .nav-link {
     width: 100%;
@@ -4430,6 +4591,12 @@ footer .container .social-icons a {
     font-size: 16px;
     padding: 10px 8px 10px 8px;
   }
+  .participant-flow .event-hero.slider2 .inner-block .event-feature .btn {
+    max-width: 130px;
+  }
+  .participant-flow .event-hero.slider2 .inner-block .event-feature .btn.btn-warning {
+    margin-right: 5px;
+  }
 }
 
 @media (max-width: 767.98px) {
@@ -4441,7 +4608,10 @@ footer .container .social-icons a {
     font-size: 20px;
   }
   .navbar-light .navbar-brand img {
-    max-width: 170px;
+    max-width: 250px;
+  }
+  .slick-prev, .slick-next {
+    top: 30% !important;
   }
   .hero .hero-text-box {
     text-align: center;
@@ -4708,6 +4878,7 @@ footer .container .social-icons a {
   .event-list .event .event-footer .btn {
     max-width: 115px;
     font-size: 15px;
+    float: right;
   }
   .rgister .img-fluid {
     display: none;
@@ -4724,6 +4895,34 @@ footer .container .social-icons a {
   }
   .participant-profile .profile-content .info-head .btn.btn-secondary {
     margin-right: 10px;
+  }
+  .participant-flow .event-hero.slider2 .bg::after {
+    display: none;
+  }
+  .participant-flow .event-hero.slider2 .bg .inner-block .hero-img {
+    display: none;
+  }
+  .participant-flow .event-hero.slider2 .bg .inner-block .left-slide-content {
+    margin-top: 0;
+    min-height: auto;
+  }
+  .participant-flow .event-hero.slider2 .bg .inner-block .col-md-6:first-child::before {
+    content: "";
+    display: block;
+    border-radius: 10px;
+    background: #F1CA08;
+    width: 75px;
+    height: 75px;
+    position: absolute;
+    left: -25px;
+    top: auto !important;
+    bottom: -30px !important;
+  }
+  .participant-flow .event-hero.slider2 .bg .inner-block .statistics {
+    padding-right: 0;
+  }
+  .features .feature-box .btn {
+    margin-bottom: 10px;
   }
 }
 
@@ -4851,6 +5050,18 @@ footer .container .social-icons a {
   .rgister .login-btns .col:last-child {
     padding-left: 0;
   }
+  .participant-flow .event-hero.slider2 .bg .inner-block .left-slide-content {
+    padding: 40px 25px;
+  }
+  .participant-flow .event-hero.slider2 .bg .inner-block .left-slide-content h1 {
+    font-size: 25px;
+  }
+  .participant-flow .event-hero.slider2.slider3 .bg .inner-block .left-slide-content {
+    padding: 40px 15px;
+  }
+  .participant-flow .event-hero.slider2.slider3 .bg .inner-block .left-slide-content .btn {
+    margin-bottom: 5px;
+  }
 }
 
 @media (max-width: 500px) {
@@ -4914,6 +5125,13 @@ footer .container .social-icons a {
     border-radius: 3px;
     padding: 7px 10px 4px;
     font-size: 14px;
+  }
+  .participant-flow .event-hero.slider2.slider3 .bg .inner-block .left-slide-content .btn {
+    width: 100%;
+    max-width: 100%;
+  }
+  .participant-flow .event-hero .statistics span {
+    font-size: 12px;
   }
 }
 
