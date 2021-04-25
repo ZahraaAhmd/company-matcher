@@ -263,7 +263,7 @@ h2.with-border.center span {
 .slick-prev .fas,
 .slick-next .fas {
   font-size: 25px;
-  background: rgba(0, 0, 0, 0.75);
+  background: #f1ca08;
   color: #fff;
   padding: 10px 15px;
 }
@@ -416,6 +416,21 @@ h2.with-border.center span {
 
 .navbar-brand img {
   max-height: 50px;
+}
+
+.notification-list {
+  position: absolute;
+  width: 260px;
+  right: 0;
+  background: whitesmoke;
+  padding: 0;
+}
+
+.notification-list p {
+  border-top: 1px solid gray;
+  text-align: left;
+  font-weight: 500;
+  padding: 10px;
 }
 
 /*** start events style ***/
@@ -2123,13 +2138,16 @@ textarea.form-control {
 }
 
 .package-checkout .checkout-total {
-  width: 300px;
+  width: 100%;
+  min-width: 260px;
+  max-width: 300px;
   margin-top: 30px;
 }
 
-@media (min-width: 355px) {
+@media (min-width: 400px) {
   .package-checkout .checkout-total {
     width: 353px;
+    max-width: 350px;
   }
 }
 
@@ -3529,7 +3547,7 @@ footer .container .social-icons a {
 
 .participant-profile .company-form h1 {
   font-size: 34px;
-  line-height: 28px;
+  /*  line-height: 28px;*/
   margin-bottom: 40px;
 }
 
@@ -3902,6 +3920,7 @@ footer .container .social-icons a {
   border-radius: 5px;
   padding: 15px;
   margin-top: 20px;
+  position: relative;
 }
 
 .day-info .day-head span {
@@ -3923,6 +3942,15 @@ footer .container .social-icons a {
 
 .day-info .day-head .custom-control {
   padding-top: 5px;
+  position: initial;
+}
+
+.day-info .day-head .custom-control .custom-control-input {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  position: absolute;
+  z-index: 9999;
 }
 
 .day-info h3 {
@@ -4322,7 +4350,7 @@ footer .container .social-icons a {
 
 @media (max-width: 991.98px) {
   .bg-light {
-    margin-bottom: 60px;
+    margin-bottom: 0px;
     padding-left: 0;
     padding-right: 0;
   }
@@ -4596,7 +4624,11 @@ footer .container .social-icons a {
     font-size: 20px;
   }
   .navbar-light .navbar-brand img {
-    max-width: 170px;
+    max-width: 250px;
+  }
+  .slick-prev,
+  .slick-next {
+    top: 30% !important;
   }
   .hero .hero-text-box {
     text-align: center;
@@ -4863,6 +4895,7 @@ footer .container .social-icons a {
   .event-list .event .event-footer .btn {
     max-width: 115px;
     font-size: 15px;
+    float: right;
   }
   .rgister .img-fluid {
     display: none;
@@ -4907,6 +4940,12 @@ footer .container .social-icons a {
   }
   .features .feature-box .btn {
     margin-bottom: 10px;
+  }
+  .package-checkout .package-table table tbody tr.other-packages td .btn {
+    padding: 10px 12px 8px 12px;
+  }
+  .package-checkout .package-table table tbody tr td .quantity-label {
+    margin: 0 0 5px 0;
   }
 }
 
@@ -5046,26 +5085,31 @@ footer .container .social-icons a {
   .participant-flow .event-hero.slider2.slider3 .bg .inner-block .left-slide-content .btn {
     margin-bottom: 5px;
   }
+  .package-checkout .package-table table .thead-light th .hidden-sm {
+    display: none;
+  }
+  .package-table table {
+    zoom: 0.65;
+  }
 }
 
 @media (max-width: 500px) {
-  .profile-btns .col,
-  .profile-btns .col-auto {
-    max-width: 100%;
-    -webkit-box-flex: 0;
-        -ms-flex: 0 0 100%;
+  .profile-btns {
+    /*  .col,
+        .col-auto {
+            max-width: 100%;
             flex: 0 0 100%;
-  }
-  .profile-btns .col {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-  }
-  .profile-btns .col-auto {
-    text-align: right;
-    -webkit-box-ordinal-group: 2;
-        -ms-flex-order: 1;
+        }
+        .col {
+            order: 2
+        }
+        .col-auto {
+            text-align: right;
             order: 1;
+        }*/
+  }
+  .profile-btns .col-auto .btn {
+    padding: 12px 12px 10px 12px;
   }
   .participant-profile .company-form h2 .float-right {
     width: 150px;

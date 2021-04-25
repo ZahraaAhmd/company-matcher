@@ -390,7 +390,8 @@
     .navbar-light .navbar-brand img {
         max-width: 250px
     }
-    .slick-prev, .slick-next {
+    .slick-prev,
+    .slick-next {
         top: 30% !important;
     }
     .hero .hero-text-box {
@@ -718,6 +719,12 @@
     .features .feature-box .btn {
         margin-bottom: 10px;
     }
+    .package-checkout .package-table table tbody tr.other-packages td .btn {
+        padding: 10px 12px 8px 12px;
+    }
+    .package-checkout .package-table table tbody tr td .quantity-label {
+        margin: 0 0 5px 0;
+    }
 }
 
 @media(max-width:575.98px) {
@@ -865,11 +872,17 @@
             margin-bottom: 5px;
         }
     }
+    .package-checkout .package-table table .thead-light th .hidden-sm {
+        display: none;
+    }
+    .package-table table {
+        zoom: 0.65
+    }
 }
 
 @media(max-width:500px) {
     .profile-btns {
-        .col,
+        /*  .col,
         .col-auto {
             max-width: 100%;
             flex: 0 0 100%;
@@ -880,6 +893,11 @@
         .col-auto {
             text-align: right;
             order: 1;
+        }*/
+        .col-auto {
+            .btn {
+                padding: 12px 12px 10px 12px;
+            }
         }
     }
     .participant-profile .company-form h2 {

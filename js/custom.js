@@ -102,12 +102,13 @@ $(document).ready(function() {
     $(".toggle-filter").on('click', function() {
         $('.filter-box').toggleClass('active');
     });
-    $(".navbar-collapse .toggle-menu").on('click', function() {
+    $(".navbar-collapse .toggle-menu,.bg-light .navbar-collapse.show .nav-link").on('click', function() {
         $(".navbar-collapse").fideOut();
     });
     $(".participant-flow .bg-light .navbar-toggler .navbar-toggler-icon").on('click', function() {
         $(".navbar-collapse").fideIn();
     });
+
 
 });
 /*** start upload image js****/
