@@ -4370,6 +4370,9 @@ footer .container .social-icons a {
     background-size: 100% 100%;
     width: 40px;
   }
+  .participant-flow .bg-light {
+    margin-bottom: 0;
+  }
   .participant-flow .bg-light .container {
     position: relative;
   }
