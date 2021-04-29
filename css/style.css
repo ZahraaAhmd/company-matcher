@@ -2561,6 +2561,111 @@ footer .container .social-icons a {
   min-height: 1px;
 }
 
+.participant-flow .event-hero.event-slider {
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.participant-flow .event-hero.event-slider .slider-box {
+  position: relative;
+  border-radius: 10px;
+}
+
+.participant-flow .event-hero.event-slider .slider-box::after, .participant-flow .event-hero.event-slider .slider-box::before {
+  content: "";
+  display: block;
+  border-radius: 10px;
+  background: #F1CA08;
+  width: 75px;
+  height: 75px;
+  position: absolute;
+}
+
+.participant-flow .event-hero.event-slider .slider-box::after {
+  bottom: -25px;
+  left: -30px;
+}
+
+.participant-flow .event-hero.event-slider .slider-box::before {
+  top: -25px;
+  right: -30px;
+}
+
+.participant-flow .event-hero.event-slider .slider-box .carousel-inner {
+  background: #000;
+  z-index: 99;
+  position: relative;
+  border-radius: 10px;
+}
+
+.participant-flow .event-hero.event-slider .slider-box .carousel-inner .carousel-item {
+  border-radius: 10px;
+}
+
+.participant-flow .event-hero.event-slider .slider-box .carousel-inner .carousel-item img {
+  -webkit-box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+  width: 100%;
+  height: auto;
+  max-height: 450px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.participant-flow .event-hero.event-slider .inner-block {
+  padding: 0;
+  background: transparent;
+  margin-top: -115px;
+}
+
+.participant-flow .event-hero.event-slider .inner-block::after {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .participant-flow .event-hero.event-slider .inner-block .left-slide-content {
+    padding-left: 60px;
+  }
+}
+
+.participant-flow .event-hero.event-slider .inner-block .left-slide-content h1 {
+  font-size: 42px;
+  min-height: 80px;
+}
+
+.participant-flow .event-hero.event-slider .inner-block .left-slide-content .event-feature ul li {
+  color: #1E1E1E;
+}
+
+.participant-flow .event-hero.event-slider .inner-block .event-feature {
+  padding-top: 30px;
+}
+
+.participant-flow .event-hero.event-slider .inner-block .btn-box {
+  padding-top: 55px;
+}
+
+.participant-flow .event-hero.event-slider .inner-block .statistics {
+  margin-top: 0;
+}
+
+.participant-flow .event-hero.event-slider .inner-block .statistics .stat-number {
+  width: 65px;
+  height: 65px;
+  background-color: #DFDEDB;
+}
+
+.participant-flow .event-hero.event-slider .inner-block .statistics span {
+  color: #fff;
+}
+
+.participant-flow .event-hero.event-slider .inner-block .statistics .btn-outline-warning {
+  color: #1E1E1E;
+  padding: 10px 28px 8px 28px;
+  font-weight: 500;
+}
+
 .participant-flow .event-hero-2 .inner-block {
   padding: 0 !important;
 }
