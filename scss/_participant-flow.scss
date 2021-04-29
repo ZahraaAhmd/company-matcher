@@ -1,7 +1,7 @@
 .participant-flow {
     /*** header style ***/
     .bg-light {
-        margin-bottom: 30px;
+        margin-bottom: 0px;
     }
     /*** event hero styles ***/
     .event-hero {
@@ -52,7 +52,7 @@
             h1 {
                 color: #fff;
                 text-transform: capitalize;
-                font-size: 45px;
+                font-size: 32px;
                 line-height: 1;
                 min-height: 32px;
                 max-height: 90px;
@@ -86,7 +86,7 @@
                 }
                 .btn {
                     width: 100%;
-                    max-width: 200px;
+                    max-width: 170px;
                     padding: 13px 15px 10px 15px;
                     border-radius: 10px;
                     border-width: 2px;
@@ -346,7 +346,9 @@
                     }
                 }
             }
+            
         }
+        
     }
     .event-hero-2 {
         .inner-block {
@@ -590,7 +592,7 @@
                     .event-logos {
                         margin-bottom: 20px;
                         img {
-                            max-height: 35px;
+                            max-height: 50px;
                         }
                     }
                     h3 {
@@ -874,6 +876,17 @@
     }
 }
 
+img.virtual360 {
+    border-radius: 15px;
+    width: 40px;
+}
+.participant-3d img.virtual360 {
+    border-radius: 7px;
+    width: 30px;
+    height: 30px;
+}
+
+
 .participant-profile {
     h2 {
         font-size: 24px;
@@ -883,6 +896,7 @@
             color: rgba(237, 196, 51, 1)
         }
     }
+    
     .profile-head {
         width: 100%;
         height: 250px;
@@ -1062,6 +1076,7 @@
         margin-bottom: 40px;
     }
     .company-btns {
+        margin-bottom: 15px;
         .btn-outline-warning {
             border-radius: 10px;
             border: 1px solid $yellow;

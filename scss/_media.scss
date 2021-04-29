@@ -659,7 +659,7 @@
     .events-hero {
         padding-bottom: 0 !important;
         .event-preview {
-            margin-top: -90px;
+            margin-top: -90px; 
         }
     }
     .event-list .event .event-footer .btn {
@@ -882,6 +882,7 @@
 
 @media(max-width:500px) {
     .profile-btns {
+        margin-bottom: 10px;
         /*  .col,
         .col-auto {
             max-width: 100%;
